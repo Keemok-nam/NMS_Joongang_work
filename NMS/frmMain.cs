@@ -5034,7 +5034,7 @@ namespace NMS
                 case "중앙선":
                     #region 중앙선 RC 통화권 초기화
                     //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-                    cntRC = 10;
+                    cntRC = 11;
 
                     #region RC 전체 통화권 버튼 정보 초기화
                     //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -5174,16 +5174,20 @@ namespace NMS
                     rcInfo[2].rcBtInfo[5].muID = 6;
                     rcInfo[2].rcBtInfo[5].ruID = 1;
 
+
+
                     rcInfo[3].rcBtInfo[0].name = "판 대";
                     rcInfo[3].rcBtInfo[0].flagVisibel = true;
                     rcInfo[3].rcBtInfo[0].left = 672 + 169;
                     rcInfo[3].rcBtInfo[0].top = 49;
+
                     rcInfo[3].rcBtInfo[1].name = stationList[5];    //판대
                     rcInfo[3].rcBtInfo[1].flagVisibel = true;
                     rcInfo[3].rcBtInfo[1].left = 672 + 169;
                     rcInfo[3].rcBtInfo[1].top = 333;
                     rcInfo[3].rcBtInfo[1].muID = 6;
                     rcInfo[3].rcBtInfo[1].ruID = 0;
+
                     rcInfo[3].rcBtInfo[2].name = clsCommon.muruName[5].ruName[0].ruName; //판대 T
                     rcInfo[3].rcBtInfo[2].flagVisibel = true;
                     rcInfo[3].rcBtInfo[2].left = 672 + 169;
@@ -5191,69 +5195,111 @@ namespace NMS
                     rcInfo[3].rcBtInfo[2].muID = 6;
                     rcInfo[3].rcBtInfo[2].ruID = 1;
 
+                    
                     rcInfo[4].rcBtInfo[0].name = "서원주";
                     rcInfo[4].rcBtInfo[0].flagVisibel = true;
                     rcInfo[4].rcBtInfo[0].left = 606 + 169;
                     rcInfo[4].rcBtInfo[0].top = 49;
+
+
+                    int left_판대 = 128;
+
                     rcInfo[4].rcBtInfo[1].name = stationList[5];    //판대
                     rcInfo[4].rcBtInfo[1].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[1].left = 188 + 169;
+                    rcInfo[4].rcBtInfo[1].left = left_판대 + 169;
                     rcInfo[4].rcBtInfo[1].top = 333;
                     rcInfo[4].rcBtInfo[1].muID = 6;
                     rcInfo[4].rcBtInfo[1].ruID = 0;
+
+
                     rcInfo[4].rcBtInfo[2].name = stationList[6];    //서원주
                     rcInfo[4].rcBtInfo[2].flagVisibel = true;
                     rcInfo[4].rcBtInfo[2].left = 606 + 169;
                     rcInfo[4].rcBtInfo[2].top = 333;
                     rcInfo[4].rcBtInfo[2].muID = 7;
                     rcInfo[4].rcBtInfo[2].ruID = 0;
+
+
+                    int tmp = 1144 + 80;
+                    
                     rcInfo[4].rcBtInfo[3].name = stationList[7];    //남원주
                     rcInfo[4].rcBtInfo[3].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[3].left = 1144 + 169;
+                    rcInfo[4].rcBtInfo[3].left = tmp + 169;
                     rcInfo[4].rcBtInfo[3].top = 333;
                     rcInfo[4].rcBtInfo[3].muID = 8;
                     rcInfo[4].rcBtInfo[3].ruID = 0;
+
+                
+
                     rcInfo[4].rcBtInfo[4].name = clsCommon.muruName[5].ruName[0].ruName; //판대 T
                     rcInfo[4].rcBtInfo[4].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[4].left = 188 + 169;
+                    rcInfo[4].rcBtInfo[4].left = left_판대 + 169;
                     rcInfo[4].rcBtInfo[4].top = 617;
                     rcInfo[4].rcBtInfo[4].muID = 6;
                     rcInfo[4].rcBtInfo[4].ruID = 1;
+
+
+                    int left_장지 = 335;
+
                     rcInfo[4].rcBtInfo[5].name = clsCommon.muruName[6].ruName[0].ruName; //장지 T
                     rcInfo[4].rcBtInfo[5].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[5].left = 375 + 169;
+                    rcInfo[4].rcBtInfo[5].left = left_장지 + 169;
                     rcInfo[4].rcBtInfo[5].top = 617;
                     rcInfo[4].rcBtInfo[5].muID = 7;
                     rcInfo[4].rcBtInfo[5].ruID = 1;
+
+                    tmp = 606 - 90;
+
                     rcInfo[4].rcBtInfo[6].name = clsCommon.muruName[6].ruName[1].ruName; //원대 T
                     rcInfo[4].rcBtInfo[6].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[6].left = 606 + 169;
+                    rcInfo[4].rcBtInfo[6].left = tmp + 169;
                     rcInfo[4].rcBtInfo[6].top = 617;
                     rcInfo[4].rcBtInfo[6].muID = 7;
                     rcInfo[4].rcBtInfo[6].ruID = 2;
-                    rcInfo[4].rcBtInfo[7].name = clsCommon.muruName[6].ruName[2].ruName; //동화 T
+
+                    tmp = 840 - 120;
+
+                    rcInfo[4].rcBtInfo[7].name = clsCommon.muruName[6].ruName[2].ruName; //소막골 T
                     rcInfo[4].rcBtInfo[7].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[7].left = 840 + 169;
+                    rcInfo[4].rcBtInfo[7].left = tmp + 169;
                     rcInfo[4].rcBtInfo[7].top = 617;
                     rcInfo[4].rcBtInfo[7].muID = 7;
                     rcInfo[4].rcBtInfo[7].ruID = 3;
-                    rcInfo[4].rcBtInfo[8].name = clsCommon.muruName[7].ruName[0].ruName; //사제 1T
+
+                    tmp = 900;
+                    rcInfo[4].rcBtInfo[8].name = clsCommon.muruName[6].ruName[3].ruName; //만종 T
                     rcInfo[4].rcBtInfo[8].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[8].left = 1027 + 169;
+                    rcInfo[4].rcBtInfo[8].left = tmp + 169;
                     rcInfo[4].rcBtInfo[8].top = 617;
-                    rcInfo[4].rcBtInfo[8].muID = 8;
-                    rcInfo[4].rcBtInfo[8].ruID = 1;
-                    rcInfo[4].rcBtInfo[9].name = clsCommon.muruName[7].ruName[1].ruName; //사제 2T
+                    rcInfo[4].rcBtInfo[8].muID = 7;
+                    rcInfo[4].rcBtInfo[8].ruID = 4;
+
+
+                    tmp = 1027 + 80;
+
+                    rcInfo[4].rcBtInfo[9].name = clsCommon.muruName[7].ruName[0].ruName; //사제 1T
                     rcInfo[4].rcBtInfo[9].flagVisibel = true;
-                    rcInfo[4].rcBtInfo[9].left = 1261 + 169;
+                    rcInfo[4].rcBtInfo[9].left = tmp + 169;
                     rcInfo[4].rcBtInfo[9].top = 617;
                     rcInfo[4].rcBtInfo[9].muID = 8;
-                    rcInfo[4].rcBtInfo[9].ruID = 2;
+                    rcInfo[4].rcBtInfo[9].ruID = 1;
 
+                    tmp = 1261 + 80;
+                    rcInfo[4].rcBtInfo[10].name = clsCommon.muruName[7].ruName[1].ruName; //사제 2T
+                    rcInfo[4].rcBtInfo[10].flagVisibel = true;
+                    rcInfo[4].rcBtInfo[10].left = tmp + 169;
+                    rcInfo[4].rcBtInfo[10].top = 617;
+                    rcInfo[4].rcBtInfo[10].muID = 8;
+                    rcInfo[4].rcBtInfo[10].ruID = 2;
+
+
+
+                    tmp = 672;
                     rcInfo[5].rcBtInfo[0].name = "남원주";
                     rcInfo[5].rcBtInfo[0].flagVisibel = true;
-                    rcInfo[5].rcBtInfo[0].left = 672 + 169;
+                    rcInfo[5].rcBtInfo[0].left = tmp + 169;
                     rcInfo[5].rcBtInfo[0].top = 49;
+
                     rcInfo[5].rcBtInfo[1].name = stationList[7];    //남원주
                     rcInfo[5].rcBtInfo[1].flagVisibel = true;
                     rcInfo[5].rcBtInfo[1].left = 672 + 169;

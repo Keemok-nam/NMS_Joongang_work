@@ -42,7 +42,9 @@
             this.btArrangement = new System.Windows.Forms.Button();
             this.gbMuRoute = new System.Windows.Forms.GroupBox();
             this.panelMU = new System.Windows.Forms.Panel();
+            this.MainScreen = new NMS.ucMainScreen();
             this.btMuBda20 = new System.Windows.Forms.Button();
+            this.ucRemark1 = new NMS.ucRemark();
             this.btMuBda11 = new System.Windows.Forms.Button();
             this.btMuBda12 = new System.Windows.Forms.Button();
             this.btMuBda13 = new System.Windows.Forms.Button();
@@ -185,6 +187,9 @@
             this.pbMURoute = new System.Windows.Forms.PictureBox();
             this.gbStation = new System.Windows.Forms.GroupBox();
             this.gb주장치 = new System.Windows.Forms.GroupBox();
+            this.MainMachineSt2 = new NMS.stationSt();
+            this.MainMachineSt3 = new NMS.stationSt();
+            this.MainMachineSt1 = new NMS.stationSt();
             this.gbRcRoute = new System.Windows.Forms.GroupBox();
             this.panelRC = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -530,17 +535,35 @@
             this.btConsoleSub1 = new System.Windows.Forms.Button();
             this.gbFaultInfoMU = new System.Windows.Forms.GroupBox();
             this.panelMUGround = new System.Windows.Forms.Panel();
+            this.MuUps = new NMS.ucMUUPS();
+            this.MuFm = new NMS.ucMUFM();
+            this.MUSt = new NMS.ucMUSt();
             this.panelMuRuSt = new System.Windows.Forms.Panel();
             this.label230 = new System.Windows.Forms.Label();
+            this.ruSt1_4 = new NMS.RuSt();
+            this.ruSt1_1 = new NMS.RuSt();
+            this.ruSt1_3 = new NMS.RuSt();
+            this.ruSt1_2 = new NMS.RuSt();
             this.panel_MuName = new System.Windows.Forms.Panel();
             this.lblMUName = new System.Windows.Forms.Label();
             this.gbFaultInfoRU = new System.Windows.Forms.GroupBox();
             this.panelRUGround = new System.Windows.Forms.Panel();
+            this.RuFm = new NMS.ucRUFM();
+            this.RUSt = new NMS.ucRUSt();
+            this.ucBDA4 = new NMS.ucBDA();
+            this.ucBDA3 = new NMS.ucBDA();
+            this.ucBDA2 = new NMS.ucBDA();
+            this.ucBDA1 = new NMS.ucBDA();
             this.panel_RuName = new System.Windows.Forms.Panel();
             this.lblRUName = new System.Windows.Forms.Label();
             this.panelRuRuSt = new System.Windows.Forms.Panel();
+            this.ruSt2_4 = new NMS.RuSt();
             this.label243 = new System.Windows.Forms.Label();
+            this.ruSt2_3 = new NMS.RuSt();
+            this.ruSt2_1 = new NMS.RuSt();
+            this.ruSt2_2 = new NMS.RuSt();
             this.gbFaultInfoSearch = new System.Windows.Forms.GroupBox();
+            this.ucErrorSearch = new NMS.ucSearch();
             this.btSearchChange = new System.Windows.Forms.Button();
             this.tcMainSearch = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -934,29 +957,6 @@
             this.lblCCEErrSt1 = new System.Windows.Forms.Label();
             this.lblCCEErrSt3 = new System.Windows.Forms.Label();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.MainScreen = new NMS.ucMainScreen();
-            this.ucRemark1 = new NMS.ucRemark();
-            this.MainMachineSt2 = new NMS.stationSt();
-            this.MainMachineSt3 = new NMS.stationSt();
-            this.MainMachineSt1 = new NMS.stationSt();
-            this.ucErrorSearch = new NMS.ucSearch();
-            this.RuFm = new NMS.ucRUFM();
-            this.RUSt = new NMS.ucRUSt();
-            this.ucBDA4 = new NMS.ucBDA();
-            this.ucBDA3 = new NMS.ucBDA();
-            this.ucBDA2 = new NMS.ucBDA();
-            this.ucBDA1 = new NMS.ucBDA();
-            this.ruSt2_4 = new NMS.RuSt();
-            this.ruSt2_3 = new NMS.RuSt();
-            this.ruSt2_1 = new NMS.RuSt();
-            this.ruSt2_2 = new NMS.RuSt();
-            this.MuUps = new NMS.ucMUUPS();
-            this.MuFm = new NMS.ucMUFM();
-            this.MUSt = new NMS.ucMUSt();
-            this.ruSt1_4 = new NMS.RuSt();
-            this.ruSt1_1 = new NMS.RuSt();
-            this.ruSt1_3 = new NMS.RuSt();
-            this.ruSt1_2 = new NMS.RuSt();
             this.gbFaultInfoAll.SuspendLayout();
             this.gbMuRoute.SuspendLayout();
             this.panelMU.SuspendLayout();
@@ -1186,10 +1186,10 @@
             // 
             this.gbFaultInfoAll.Controls.Add(this.cbArrangement);
             this.gbFaultInfoAll.Controls.Add(this.btArrangement);
+            this.gbFaultInfoAll.Controls.Add(this.gbRcRoute);
             this.gbFaultInfoAll.Controls.Add(this.gbMuRoute);
             this.gbFaultInfoAll.Controls.Add(this.gbStation);
             this.gbFaultInfoAll.Controls.Add(this.gb주장치);
-            this.gbFaultInfoAll.Controls.Add(this.gbRcRoute);
             this.gbFaultInfoAll.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.gbFaultInfoAll.Location = new System.Drawing.Point(12, 17);
             this.gbFaultInfoAll.Name = "gbFaultInfoAll";
@@ -1396,6 +1396,17 @@
             this.panelMU.Size = new System.Drawing.Size(1824, 745);
             this.panelMU.TabIndex = 0;
             // 
+            // MainScreen
+            // 
+            this.MainScreen.AutoSize = true;
+            this.MainScreen.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MainScreen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainScreen.Location = new System.Drawing.Point(0, 0);
+            this.MainScreen.Margin = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.MainScreen.Name = "MainScreen";
+            this.MainScreen.Size = new System.Drawing.Size(1824, 745);
+            this.MainScreen.TabIndex = 172;
+            // 
             // btMuBda20
             // 
             this.btMuBda20.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -1405,6 +1416,13 @@
             this.btMuBda20.TabIndex = 171;
             this.btMuBda20.UseVisualStyleBackColor = true;
             this.btMuBda20.Visible = false;
+            // 
+            // ucRemark1
+            // 
+            this.ucRemark1.Location = new System.Drawing.Point(0, 627);
+            this.ucRemark1.Name = "ucRemark1";
+            this.ucRemark1.Size = new System.Drawing.Size(111, 118);
+            this.ucRemark1.TabIndex = 125;
             // 
             // btMuBda11
             // 
@@ -2970,6 +2988,36 @@
             this.gb주장치.Text = "주 장 치";
             this.gb주장치.Visible = false;
             // 
+            // MainMachineSt2
+            // 
+            this.MainMachineSt2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MainMachineSt2.Location = new System.Drawing.Point(18, 304);
+            this.MainMachineSt2.Margin = new System.Windows.Forms.Padding(4);
+            this.MainMachineSt2.Name = "MainMachineSt2";
+            this.MainMachineSt2.Size = new System.Drawing.Size(300, 200);
+            this.MainMachineSt2.TabIndex = 3;
+            this.MainMachineSt2.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
+            // 
+            // MainMachineSt3
+            // 
+            this.MainMachineSt3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MainMachineSt3.Location = new System.Drawing.Point(18, 552);
+            this.MainMachineSt3.Margin = new System.Windows.Forms.Padding(4);
+            this.MainMachineSt3.Name = "MainMachineSt3";
+            this.MainMachineSt3.Size = new System.Drawing.Size(300, 200);
+            this.MainMachineSt3.TabIndex = 2;
+            this.MainMachineSt3.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
+            // 
+            // MainMachineSt1
+            // 
+            this.MainMachineSt1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MainMachineSt1.Location = new System.Drawing.Point(18, 56);
+            this.MainMachineSt1.Margin = new System.Windows.Forms.Padding(4);
+            this.MainMachineSt1.Name = "MainMachineSt1";
+            this.MainMachineSt1.Size = new System.Drawing.Size(300, 200);
+            this.MainMachineSt1.TabIndex = 0;
+            this.MainMachineSt1.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
+            // 
             // gbRcRoute
             // 
             this.gbRcRoute.Controls.Add(this.panelRC);
@@ -3016,7 +3064,7 @@
             this.panelRC.Controls.Add(this.btRC14);
             this.panelRC.Controls.Add(this.btRC15);
             this.panelRC.Controls.Add(this.pbRC);
-            this.panelRC.Location = new System.Drawing.Point(12, 25);
+            this.panelRC.Location = new System.Drawing.Point(0, 0);
             this.panelRC.Name = "panelRC";
             this.panelRC.Size = new System.Drawing.Size(1824, 745);
             this.panelRC.TabIndex = 2;
@@ -7127,6 +7175,31 @@
             this.panelMUGround.Size = new System.Drawing.Size(1655, 790);
             this.panelMUGround.TabIndex = 220;
             // 
+            // MuUps
+            // 
+            this.MuUps.BackColor = System.Drawing.Color.Transparent;
+            this.MuUps.Location = new System.Drawing.Point(1378, 426);
+            this.MuUps.Name = "MuUps";
+            this.MuUps.Size = new System.Drawing.Size(274, 364);
+            this.MuUps.TabIndex = 230;
+            // 
+            // MuFm
+            // 
+            this.MuFm.BackColor = System.Drawing.Color.Transparent;
+            this.MuFm.Location = new System.Drawing.Point(1084, 610);
+            this.MuFm.Name = "MuFm";
+            this.MuFm.Size = new System.Drawing.Size(274, 180);
+            this.MuFm.TabIndex = 219;
+            // 
+            // MUSt
+            // 
+            this.MUSt.BackColor = System.Drawing.Color.Transparent;
+            this.MUSt.Location = new System.Drawing.Point(0, 0);
+            this.MUSt.Name = "MUSt";
+            this.MUSt.Size = new System.Drawing.Size(1655, 790);
+            this.MUSt.TabIndex = 229;
+            this.MUSt.muControlClick += new NMS.UserControl_Control(this.MUSt_muControlClick);
+            // 
             // panelMuRuSt
             // 
             this.panelMuRuSt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMuRuSt.BackgroundImage")));
@@ -7151,6 +7224,46 @@
             this.label230.TabIndex = 43;
             this.label230.Text = "RU 정보";
             this.label230.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ruSt1_4
+            // 
+            this.ruSt1_4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_4.Location = new System.Drawing.Point(14, 556);
+            this.ruSt1_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_4.Name = "ruSt1_4";
+            this.ruSt1_4.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_4.TabIndex = 42;
+            this.ruSt1_4.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt1_1
+            // 
+            this.ruSt1_1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_1.Location = new System.Drawing.Point(15, 73);
+            this.ruSt1_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_1.Name = "ruSt1_1";
+            this.ruSt1_1.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_1.TabIndex = 21;
+            this.ruSt1_1.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt1_3
+            // 
+            this.ruSt1_3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_3.Location = new System.Drawing.Point(15, 395);
+            this.ruSt1_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_3.Name = "ruSt1_3";
+            this.ruSt1_3.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_3.TabIndex = 41;
+            this.ruSt1_3.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt1_2
+            // 
+            this.ruSt1_2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_2.Location = new System.Drawing.Point(15, 234);
+            this.ruSt1_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_2.Name = "ruSt1_2";
+            this.ruSt1_2.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_2.TabIndex = 40;
+            this.ruSt1_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
             // 
             // panel_MuName
             // 
@@ -7198,6 +7311,64 @@
             this.panelRUGround.Size = new System.Drawing.Size(1655, 790);
             this.panelRUGround.TabIndex = 135;
             // 
+            // RuFm
+            // 
+            this.RuFm.BackColor = System.Drawing.Color.Transparent;
+            this.RuFm.Location = new System.Drawing.Point(208, 597);
+            this.RuFm.Name = "RuFm";
+            this.RuFm.Size = new System.Drawing.Size(200, 193);
+            this.RuFm.TabIndex = 243;
+            this.RuFm.Visible = false;
+            // 
+            // RUSt
+            // 
+            this.RUSt.BackColor = System.Drawing.Color.Transparent;
+            this.RUSt.Location = new System.Drawing.Point(0, 0);
+            this.RUSt.Name = "RUSt";
+            this.RUSt.Size = new System.Drawing.Size(1655, 790);
+            this.RUSt.TabIndex = 242;
+            this.RUSt.ruControlClick += new NMS.UserControl_Control(this.RUSt_ruControlClick);
+            // 
+            // ucBDA4
+            // 
+            this.ucBDA4.BackColor = System.Drawing.Color.Transparent;
+            this.ucBDA4.Location = new System.Drawing.Point(616, 597);
+            this.ucBDA4.Name = "ucBDA4";
+            this.ucBDA4.Size = new System.Drawing.Size(485, 193);
+            this.ucBDA4.TabIndex = 247;
+            this.ucBDA4.Visible = false;
+            this.ucBDA4.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
+            // 
+            // ucBDA3
+            // 
+            this.ucBDA3.BackColor = System.Drawing.Color.Transparent;
+            this.ucBDA3.Location = new System.Drawing.Point(616, 398);
+            this.ucBDA3.Name = "ucBDA3";
+            this.ucBDA3.Size = new System.Drawing.Size(485, 193);
+            this.ucBDA3.TabIndex = 246;
+            this.ucBDA3.Visible = false;
+            this.ucBDA3.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
+            // 
+            // ucBDA2
+            // 
+            this.ucBDA2.BackColor = System.Drawing.Color.Transparent;
+            this.ucBDA2.Location = new System.Drawing.Point(616, 199);
+            this.ucBDA2.Name = "ucBDA2";
+            this.ucBDA2.Size = new System.Drawing.Size(485, 193);
+            this.ucBDA2.TabIndex = 245;
+            this.ucBDA2.Visible = false;
+            this.ucBDA2.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
+            // 
+            // ucBDA1
+            // 
+            this.ucBDA1.BackColor = System.Drawing.Color.Transparent;
+            this.ucBDA1.Location = new System.Drawing.Point(616, 0);
+            this.ucBDA1.Name = "ucBDA1";
+            this.ucBDA1.Size = new System.Drawing.Size(485, 193);
+            this.ucBDA1.TabIndex = 244;
+            this.ucBDA1.Visible = false;
+            this.ucBDA1.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
+            // 
             // panel_RuName
             // 
             this.panel_RuName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_RuName.BackgroundImage")));
@@ -7232,6 +7403,16 @@
             this.panelRuRuSt.Size = new System.Drawing.Size(200, 718);
             this.panelRuRuSt.TabIndex = 222;
             // 
+            // ruSt2_4
+            // 
+            this.ruSt2_4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt2_4.Location = new System.Drawing.Point(13, 555);
+            this.ruSt2_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt2_4.Name = "ruSt2_4";
+            this.ruSt2_4.Size = new System.Drawing.Size(174, 150);
+            this.ruSt2_4.TabIndex = 3;
+            this.ruSt2_4.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
             // label243
             // 
             this.label243.BackColor = System.Drawing.Color.Blue;
@@ -7243,6 +7424,36 @@
             this.label243.TabIndex = 43;
             this.label243.Text = "RU 정보";
             this.label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ruSt2_3
+            // 
+            this.ruSt2_3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt2_3.Location = new System.Drawing.Point(13, 394);
+            this.ruSt2_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt2_3.Name = "ruSt2_3";
+            this.ruSt2_3.Size = new System.Drawing.Size(174, 150);
+            this.ruSt2_3.TabIndex = 2;
+            this.ruSt2_3.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt2_1
+            // 
+            this.ruSt2_1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt2_1.Location = new System.Drawing.Point(13, 72);
+            this.ruSt2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt2_1.Name = "ruSt2_1";
+            this.ruSt2_1.Size = new System.Drawing.Size(174, 150);
+            this.ruSt2_1.TabIndex = 0;
+            this.ruSt2_1.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt2_2
+            // 
+            this.ruSt2_2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt2_2.Location = new System.Drawing.Point(13, 233);
+            this.ruSt2_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt2_2.Name = "ruSt2_2";
+            this.ruSt2_2.Size = new System.Drawing.Size(174, 150);
+            this.ruSt2_2.TabIndex = 1;
+            this.ruSt2_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
             // 
             // gbFaultInfoSearch
             // 
@@ -7258,6 +7469,15 @@
             this.gbFaultInfoSearch.TabIndex = 15;
             this.gbFaultInfoSearch.TabStop = false;
             this.gbFaultInfoSearch.Text = "  이 력 조 회  ";
+            // 
+            // ucErrorSearch
+            // 
+            this.ucErrorSearch.BackColor = System.Drawing.Color.White;
+            this.ucErrorSearch.Location = new System.Drawing.Point(57, 42);
+            this.ucErrorSearch.Name = "ucErrorSearch";
+            this.ucErrorSearch.Size = new System.Drawing.Size(1774, 781);
+            this.ucErrorSearch.TabIndex = 9;
+            this.ucErrorSearch.searchClick += new NMS.UserControl_Search(this.ucErrorSearch_searchClick);
             // 
             // btSearchChange
             // 
@@ -11333,226 +11553,6 @@
             // saveFileDialog
             // 
             this.saveFileDialog.Filter = "저장 파일(*.csv)|*.csv";
-            // 
-            // MainScreen
-            // 
-            this.MainScreen.AutoSize = true;
-            this.MainScreen.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.MainScreen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainScreen.Location = new System.Drawing.Point(0, 0);
-            this.MainScreen.Margin = new System.Windows.Forms.Padding(13, 9, 13, 9);
-            this.MainScreen.Name = "MainScreen";
-            this.MainScreen.Size = new System.Drawing.Size(1824, 745);
-            this.MainScreen.TabIndex = 172;
-            // 
-            // ucRemark1
-            // 
-            this.ucRemark1.Location = new System.Drawing.Point(0, 627);
-            this.ucRemark1.Name = "ucRemark1";
-            this.ucRemark1.Size = new System.Drawing.Size(111, 118);
-            this.ucRemark1.TabIndex = 125;
-            // 
-            // MainMachineSt2
-            // 
-            this.MainMachineSt2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MainMachineSt2.Location = new System.Drawing.Point(18, 304);
-            this.MainMachineSt2.Margin = new System.Windows.Forms.Padding(4);
-            this.MainMachineSt2.Name = "MainMachineSt2";
-            this.MainMachineSt2.Size = new System.Drawing.Size(300, 200);
-            this.MainMachineSt2.TabIndex = 3;
-            this.MainMachineSt2.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
-            // 
-            // MainMachineSt3
-            // 
-            this.MainMachineSt3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MainMachineSt3.Location = new System.Drawing.Point(18, 552);
-            this.MainMachineSt3.Margin = new System.Windows.Forms.Padding(4);
-            this.MainMachineSt3.Name = "MainMachineSt3";
-            this.MainMachineSt3.Size = new System.Drawing.Size(300, 200);
-            this.MainMachineSt3.TabIndex = 2;
-            this.MainMachineSt3.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
-            // 
-            // MainMachineSt1
-            // 
-            this.MainMachineSt1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MainMachineSt1.Location = new System.Drawing.Point(18, 56);
-            this.MainMachineSt1.Margin = new System.Windows.Forms.Padding(4);
-            this.MainMachineSt1.Name = "MainMachineSt1";
-            this.MainMachineSt1.Size = new System.Drawing.Size(300, 200);
-            this.MainMachineSt1.TabIndex = 0;
-            this.MainMachineSt1.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
-            // 
-            // ucErrorSearch
-            // 
-            this.ucErrorSearch.BackColor = System.Drawing.Color.White;
-            this.ucErrorSearch.Location = new System.Drawing.Point(57, 42);
-            this.ucErrorSearch.Name = "ucErrorSearch";
-            this.ucErrorSearch.Size = new System.Drawing.Size(1774, 781);
-            this.ucErrorSearch.TabIndex = 9;
-            this.ucErrorSearch.searchClick += new NMS.UserControl_Search(this.ucErrorSearch_searchClick);
-            // 
-            // RuFm
-            // 
-            this.RuFm.BackColor = System.Drawing.Color.Transparent;
-            this.RuFm.Location = new System.Drawing.Point(208, 597);
-            this.RuFm.Name = "RuFm";
-            this.RuFm.Size = new System.Drawing.Size(200, 193);
-            this.RuFm.TabIndex = 243;
-            this.RuFm.Visible = false;
-            // 
-            // RUSt
-            // 
-            this.RUSt.BackColor = System.Drawing.Color.Transparent;
-            this.RUSt.Location = new System.Drawing.Point(0, 0);
-            this.RUSt.Name = "RUSt";
-            this.RUSt.Size = new System.Drawing.Size(1655, 790);
-            this.RUSt.TabIndex = 242;
-            this.RUSt.ruControlClick += new NMS.UserControl_Control(this.RUSt_ruControlClick);
-            // 
-            // ucBDA4
-            // 
-            this.ucBDA4.BackColor = System.Drawing.Color.Transparent;
-            this.ucBDA4.Location = new System.Drawing.Point(616, 597);
-            this.ucBDA4.Name = "ucBDA4";
-            this.ucBDA4.Size = new System.Drawing.Size(485, 193);
-            this.ucBDA4.TabIndex = 247;
-            this.ucBDA4.Visible = false;
-            this.ucBDA4.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
-            // 
-            // ucBDA3
-            // 
-            this.ucBDA3.BackColor = System.Drawing.Color.Transparent;
-            this.ucBDA3.Location = new System.Drawing.Point(616, 398);
-            this.ucBDA3.Name = "ucBDA3";
-            this.ucBDA3.Size = new System.Drawing.Size(485, 193);
-            this.ucBDA3.TabIndex = 246;
-            this.ucBDA3.Visible = false;
-            this.ucBDA3.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
-            // 
-            // ucBDA2
-            // 
-            this.ucBDA2.BackColor = System.Drawing.Color.Transparent;
-            this.ucBDA2.Location = new System.Drawing.Point(616, 199);
-            this.ucBDA2.Name = "ucBDA2";
-            this.ucBDA2.Size = new System.Drawing.Size(485, 193);
-            this.ucBDA2.TabIndex = 245;
-            this.ucBDA2.Visible = false;
-            this.ucBDA2.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
-            // 
-            // ucBDA1
-            // 
-            this.ucBDA1.BackColor = System.Drawing.Color.Transparent;
-            this.ucBDA1.Location = new System.Drawing.Point(616, 0);
-            this.ucBDA1.Name = "ucBDA1";
-            this.ucBDA1.Size = new System.Drawing.Size(485, 193);
-            this.ucBDA1.TabIndex = 244;
-            this.ucBDA1.Visible = false;
-            this.ucBDA1.bdaControlClick += new NMS.UserControl_BDAControl(this.bdaSt_ControlClick);
-            // 
-            // ruSt2_4
-            // 
-            this.ruSt2_4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt2_4.Location = new System.Drawing.Point(13, 555);
-            this.ruSt2_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt2_4.Name = "ruSt2_4";
-            this.ruSt2_4.Size = new System.Drawing.Size(174, 150);
-            this.ruSt2_4.TabIndex = 3;
-            this.ruSt2_4.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt2_3
-            // 
-            this.ruSt2_3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt2_3.Location = new System.Drawing.Point(13, 394);
-            this.ruSt2_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt2_3.Name = "ruSt2_3";
-            this.ruSt2_3.Size = new System.Drawing.Size(174, 150);
-            this.ruSt2_3.TabIndex = 2;
-            this.ruSt2_3.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt2_1
-            // 
-            this.ruSt2_1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt2_1.Location = new System.Drawing.Point(13, 72);
-            this.ruSt2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt2_1.Name = "ruSt2_1";
-            this.ruSt2_1.Size = new System.Drawing.Size(174, 150);
-            this.ruSt2_1.TabIndex = 0;
-            this.ruSt2_1.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt2_2
-            // 
-            this.ruSt2_2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt2_2.Location = new System.Drawing.Point(13, 233);
-            this.ruSt2_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt2_2.Name = "ruSt2_2";
-            this.ruSt2_2.Size = new System.Drawing.Size(174, 150);
-            this.ruSt2_2.TabIndex = 1;
-            this.ruSt2_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // MuUps
-            // 
-            this.MuUps.BackColor = System.Drawing.Color.Transparent;
-            this.MuUps.Location = new System.Drawing.Point(1378, 426);
-            this.MuUps.Name = "MuUps";
-            this.MuUps.Size = new System.Drawing.Size(274, 364);
-            this.MuUps.TabIndex = 230;
-            // 
-            // MuFm
-            // 
-            this.MuFm.BackColor = System.Drawing.Color.Transparent;
-            this.MuFm.Location = new System.Drawing.Point(1084, 610);
-            this.MuFm.Name = "MuFm";
-            this.MuFm.Size = new System.Drawing.Size(274, 180);
-            this.MuFm.TabIndex = 219;
-            // 
-            // MUSt
-            // 
-            this.MUSt.BackColor = System.Drawing.Color.Transparent;
-            this.MUSt.Location = new System.Drawing.Point(0, 0);
-            this.MUSt.Name = "MUSt";
-            this.MUSt.Size = new System.Drawing.Size(1655, 790);
-            this.MUSt.TabIndex = 229;
-            this.MUSt.muControlClick += new NMS.UserControl_Control(this.MUSt_muControlClick);
-            // 
-            // ruSt1_4
-            // 
-            this.ruSt1_4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_4.Location = new System.Drawing.Point(14, 556);
-            this.ruSt1_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_4.Name = "ruSt1_4";
-            this.ruSt1_4.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_4.TabIndex = 42;
-            this.ruSt1_4.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt1_1
-            // 
-            this.ruSt1_1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_1.Location = new System.Drawing.Point(15, 73);
-            this.ruSt1_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_1.Name = "ruSt1_1";
-            this.ruSt1_1.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_1.TabIndex = 21;
-            this.ruSt1_1.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt1_3
-            // 
-            this.ruSt1_3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_3.Location = new System.Drawing.Point(15, 395);
-            this.ruSt1_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_3.Name = "ruSt1_3";
-            this.ruSt1_3.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_3.TabIndex = 41;
-            this.ruSt1_3.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt1_2
-            // 
-            this.ruSt1_2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_2.Location = new System.Drawing.Point(15, 234);
-            this.ruSt1_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_2.Name = "ruSt1_2";
-            this.ruSt1_2.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_2.TabIndex = 40;
-            this.ruSt1_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
             // 
             // frmMain
             // 
