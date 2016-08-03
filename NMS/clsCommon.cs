@@ -229,7 +229,8 @@ namespace NMS
                 case "Ver 1.29": tmpVer = 24; break;
                 case "Ver 1.30":
                 case "Ver 1.31":
-                case "Ver 1.32": tmpVer = 25; break;
+                case "Ver 1.32": 
+                case "Ver 1.33": tmpVer = 25;break;
             }
 
             return tmpVer;

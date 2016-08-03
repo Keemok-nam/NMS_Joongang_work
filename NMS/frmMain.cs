@@ -724,7 +724,7 @@ namespace NMS
             InputErrorListForDevice();
 
 
-            thisVer = "Ver 1.32";
+            thisVer = "Ver 1.33";
 
             colorSelect = Color.Lime;
             colorError = Color.Red;
@@ -988,6 +988,8 @@ namespace NMS
             btMuStation.Add(btMuStation13); btMuStation.Add(btMuStation14); btMuStation.Add(btMuStation15); btMuStation.Add(btMuStation16); btMuStation.Add(btMuStation17); btMuStation.Add(btMuStation18);
             btMuStation.Add(btMuStation19); btMuStation.Add(btMuStation20); btMuStation.Add(btMuStation21); btMuStation.Add(btMuStation22); btMuStation.Add(btMuStation23); btMuStation.Add(btMuStation24);
 
+
+
             //private Button[,] btRuStation = new Button[24, 4];
             btRuStation[0, 0] = btMuStation1_Ru1; btRuStation[0, 1] = btMuStation1_Ru2; btRuStation[0, 2] = btMuStation1_Ru3; btRuStation[0, 3] = btMuStation1_Ru4;
             btRuStation[1, 0] = btMuStation2_Ru1; btRuStation[1, 1] = btMuStation2_Ru2; btRuStation[1, 2] = btMuStation2_Ru3; btRuStation[1, 3] = btMuStation2_Ru4;
@@ -1033,6 +1035,54 @@ namespace NMS
             btRc.Add(btRC16); btRc.Add(btRC17); btRc.Add(btRC18); btRc.Add(btRC19); btRc.Add(btRC20);
             btRc.Add(btRC21); btRc.Add(btRC22); btRc.Add(btRC23); btRc.Add(btRC24);
             //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+            #region 중앙선 전용 설정..
+
+            btMuStation.Clear();
+            
+            btMuStation.AddRange(MainScreen.MuList);
+
+            foreach (var item in btMuStation)
+            {
+                item.Click += btMuStation_Click;
+            }
+
+            var RuList = MainScreen.RuList;
+
+            //지평
+            btRuStation[0, 0] = RuList[0];
+
+            //구둔
+            btRuStation[2, 0] = RuList[1];
+            btRuStation[2, 1] = RuList[2];
+
+            //양동 
+            btRuStation[4, 0] = RuList[3];
+            //판대
+            btRuStation[5, 0] = RuList[4];
+                    
+
+            ///서원주
+            btRuStation[6, 0] = RuList[5];
+            btRuStation[6, 1] = RuList[6];
+            btRuStation[6, 2] = RuList[7];
+            btRuStation[6, 3] = RuList[8];
+
+            //남원주
+            btRuStation[7, 0] = RuList[9];
+            btRuStation[7, 1] = RuList[10];
+
+
+            foreach (var item in RuList)
+            {
+                item.Click += btRuStation_Click;
+            }
+
+            #endregion
+
+
             #endregion
 
             #region 주장치 감시화면 컨트롤 배열
@@ -2528,70 +2578,73 @@ namespace NMS
                     //MU 버튼
                     for (i = 0; i < 4; i++)
                     {
-                        SetVisible(btMuStation[i], true);
+                    //    SetVisible(btMuStation[i], true);
                         SetText(btMuStation[i], stationList[i]);
-                        btMuStation[i].Width = 120;
-                        btMuStation[i].Height = 60;
+                    //    btMuStation[i].Width = 120;
+                    //    btMuStation[i].Height = 60;
 
-                        btMuStation[i].Left = i * 403 + 246;
-                        btMuStation[i].Top = 183;
+                    //    btMuStation[i].Left = i * 403 + 246;
+                    //    btMuStation[i].Top = 183;
 
-                        SetVisible(btMuStation[7 - i], true);
+                    //    SetVisible(btMuStation[7 - i], true);
                         SetText(btMuStation[7 - i], stationList[7 - i]);
-                        btMuStation[7 - i].Width = 120;
-                        btMuStation[7 - i].Height = 60;
+                    //    btMuStation[7 - i].Width = 120;
+                    //    btMuStation[7 - i].Height = 60;
 
-                        btMuStation[7 - i].Left = i * 403 + 246;
-                        btMuStation[7 - i].Top = 497;
+                    //    btMuStation[7 - i].Left = i * 403 + 246;
+                    //    btMuStation[7 - i].Top = 497;
                     }
 
-                    //RU 버튼
-                    SetVisible(btRuStation[0, 0], true);
+                    ////RU 버튼
+                    //SetVisible(btRuStation[0, 0], true);
                     SetText(btRuStation[0, 0], clsCommon.muruName[0].ruName[0].ruName);
-                    btRuStation[0, 0].Width = 100;
-                    btRuStation[0, 0].Height = 50;
-                    btRuStation[0, 0].Left = 256;
-                    btRuStation[0, 0].Top = 71;
+                    //btRuStation[0, 0].Width = 100;
+                    //btRuStation[0, 0].Height = 50;
+                    //btRuStation[0, 0].Left = 256;
+                    //btRuStation[0, 0].Top = 71;
 
-                    SetVisible(btRuStation[4, 0], true);
+                    //SetVisible(btRuStation[4, 0], true);
                     SetText(btRuStation[4, 0], clsCommon.muruName[4].ruName[0].ruName);
-                    btRuStation[4, 0].Width = 100;
-                    btRuStation[4, 0].Height = 50;
-                    btRuStation[4, 0].Left = 1465;
-                    btRuStation[4, 0].Top = 623;
+                    //btRuStation[4, 0].Width = 100;
+                    //btRuStation[4, 0].Height = 50;
+                    //btRuStation[4, 0].Left = 1465;
+                    //btRuStation[4, 0].Top = 623;
 
-                    SetVisible(btRuStation[5, 0], true);
+                    //SetVisible(btRuStation[5, 0], true);
                     SetText(btRuStation[5, 0], clsCommon.muruName[5].ruName[0].ruName);
-                    btRuStation[5, 0].Width = 100;
-                    btRuStation[5, 0].Height = 50;
-                    btRuStation[5, 0].Left = 1062;
-                    btRuStation[5, 0].Top = 623;
+                    //btRuStation[5, 0].Width = 100;
+                    //btRuStation[5, 0].Height = 50;
+                    //btRuStation[5, 0].Left = 1062;
+                    //btRuStation[5, 0].Top = 623;
 
                     for (i = 0; i < 2; i++)
                     {
-                        SetVisible(btRuStation[2, i], true);
+                        //SetVisible(btRuStation[2, i], true);
                         SetText(btRuStation[2, i], clsCommon.muruName[2].ruName[i].ruName);
-                        btRuStation[2, i].Width = 100;
-                        btRuStation[2, i].Height = 50;
-                        btRuStation[2, i].Left = i * 116 + 1004;
-                        btRuStation[2, i].Top = 71;
+                        //btRuStation[2, i].Width = 100;
+                        //btRuStation[2, i].Height = 50;
+                        //btRuStation[2, i].Left = i * 116 + 1004;
+                        //btRuStation[2, i].Top = 71;
+                        SetText(btRuStation[7, i], clsCommon.muruName[7].ruName[i].ruName);
 
                         SetVisible(btRuStation[7, i], true);
-                        SetText(btRuStation[7, i], clsCommon.muruName[7].ruName[i].ruName);
-                        btRuStation[7, i].Width = 100;
-                        btRuStation[7, i].Height = 50;
-                        btRuStation[7, i].Left = 314 - i * 116;
-                        btRuStation[7, i].Top = 623;
+                        
+                        //btRuStation[7, i].Width = 100;
+                        //btRuStation[7, i].Height = 50;
+                        //btRuStation[7, i].Left = 314 - i * 116;
+                        //btRuStation[7, i].Top = 623;
                     }
 
-                    for (i = 0; i < 3; i++)
+                    for (i = 0; i < 4; i++)
                     {
-                        SetVisible(btRuStation[6, i], true);
                         SetText(btRuStation[6, i], clsCommon.muruName[6].ruName[i].ruName);
-                        btRuStation[6, i].Width = 100;
-                        btRuStation[6, i].Height = 50;
-                        btRuStation[6, i].Left = 775 - i * 116;
-                        btRuStation[6, i].Top = 623;
+
+                        //SetVisible(btRuStation[6, i], true);
+                        
+                        //btRuStation[6, i].Width = 100;
+                        //btRuStation[6, i].Height = 50;
+                        //btRuStation[6, i].Left = 775 - i * 116;
+                        //btRuStation[6, i].Top = 623;
                     }
                     //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
                     #endregion
@@ -11641,6 +11694,7 @@ namespace NMS
             MUSt.RCNameSet(clsCommon.muruName[clsCommon.presentMUID - 1].rcName);
         }
 
+
         #region 설정화면 관련
         //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         private void btTimeSet_Click(object sender, EventArgs e)
@@ -13279,6 +13333,8 @@ namespace NMS
         //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         #endregion
 
+        
+        #region 수신된 MU, Ru, FM, UPS, BDA 데이터를 화면에 표시
 
         private void nmsMuComSt_Display(int muID)
         {
@@ -13345,7 +13401,6 @@ namespace NMS
         }
 
 
-
         #region BDA 관련
 
         private void nmsBdaComSt_Display(int muID, int ruID, int bdaID)
@@ -13396,8 +13451,6 @@ namespace NMS
         }
 
         #endregion
-        
-
 
         private void nmsMUError_Display(byte muID)
         {   //전체화면에 주예비 상태 및 장애 표시
@@ -14020,6 +14073,9 @@ namespace NMS
             else
                 MuUps.UpsStInit(false);
         }
+
+
+        #endregion
 
 
         #region CCE Test Panel과의 통신 관련

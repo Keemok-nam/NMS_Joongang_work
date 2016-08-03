@@ -934,6 +934,7 @@
             this.lblCCEErrSt1 = new System.Windows.Forms.Label();
             this.lblCCEErrSt3 = new System.Windows.Forms.Label();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.MainScreen = new NMS.ucMainScreen();
             this.ucRemark1 = new NMS.ucRemark();
             this.MainMachineSt2 = new NMS.stationSt();
             this.MainMachineSt3 = new NMS.stationSt();
@@ -1247,6 +1248,7 @@
             // 
             // panelMU
             // 
+            this.panelMU.Controls.Add(this.MainScreen);
             this.panelMU.Controls.Add(this.btMuBda20);
             this.panelMU.Controls.Add(this.ucRemark1);
             this.panelMU.Controls.Add(this.btMuBda11);
@@ -2936,11 +2938,12 @@
             // pbMURoute
             // 
             this.pbMURoute.Image = ((System.Drawing.Image)(resources.GetObject("pbMURoute.Image")));
-            this.pbMURoute.Location = new System.Drawing.Point(10, 10);
+            this.pbMURoute.Location = new System.Drawing.Point(1688, 564);
             this.pbMURoute.Name = "pbMURoute";
-            this.pbMURoute.Size = new System.Drawing.Size(1804, 725);
+            this.pbMURoute.Size = new System.Drawing.Size(126, 171);
             this.pbMURoute.TabIndex = 0;
             this.pbMURoute.TabStop = false;
+            this.pbMURoute.Visible = false;
             // 
             // gbStation
             // 
@@ -11331,6 +11334,17 @@
             // 
             this.saveFileDialog.Filter = "저장 파일(*.csv)|*.csv";
             // 
+            // MainScreen
+            // 
+            this.MainScreen.AutoSize = true;
+            this.MainScreen.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MainScreen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainScreen.Location = new System.Drawing.Point(0, 0);
+            this.MainScreen.Margin = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.MainScreen.Name = "MainScreen";
+            this.MainScreen.Size = new System.Drawing.Size(1824, 745);
+            this.MainScreen.TabIndex = 172;
+            // 
             // ucRemark1
             // 
             this.ucRemark1.Location = new System.Drawing.Point(0, 627);
@@ -11544,7 +11558,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1684, 1028);
+            this.ClientSize = new System.Drawing.Size(1904, 1042);
             this.Controls.Add(this.lblCCEErrSt2);
             this.Controls.Add(this.lblCCEErrSt1);
             this.Controls.Add(this.btMenu6);
@@ -11586,6 +11600,7 @@
             this.gbFaultInfoAll.ResumeLayout(false);
             this.gbMuRoute.ResumeLayout(false);
             this.panelMU.ResumeLayout(false);
+            this.panelMU.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMURoute)).EndInit();
             this.gb주장치.ResumeLayout(false);
             this.gbRcRoute.ResumeLayout(false);
@@ -24134,6 +24149,7 @@
         private System.Windows.Forms.TextBox tbBDAInitCycle;
         private System.Windows.Forms.Button btSearchChange;
         private ucSearch ucErrorSearch;
+        private ucMainScreen MainScreen;
     }
 }
 

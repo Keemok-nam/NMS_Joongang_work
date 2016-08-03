@@ -112,6 +112,12 @@
     <Compile Include="ucFMChild.Designer.cs">
       <DependentUpon>ucFMChild.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucMainScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMainScreen.Designer.cs">
+      <DependentUpon>ucMainScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucMUFM.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucFMChild.resx">
       <DependentUpon>ucFMChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMainScreen.resx">
+      <DependentUpon>ucMainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucMUFM.resx">
       <DependentUpon>ucMUFM.cs</DependentUpon>
