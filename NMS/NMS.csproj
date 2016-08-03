@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23CDEF56-10A9-426E-8C47-F4F2768AD6B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NMS</RootNamespace>
+    <AssemblyName>NMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\참조\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientSocket.cs" />
+    <Compile Include="clsCCETestPanel.cs" />
+    <Compile Include="clsCommon.cs" />
+    <Compile Include="clsDBMS.cs" />
+    <Compile Include="clsNMSMainMachine.cs" />
+    <Compile Include="frmDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDebug.designer.cs">
+      <DependentUpon>frmDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuSt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RuSt.Designer.cs">
+      <DependentUpon>RuSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendReceive.cs" />
+    <Compile Include="ServerSocket.cs" />
+    <Compile Include="stationSt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="stationSt.Designer.cs">
+      <DependentUpon>stationSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBDA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBDA.Designer.cs">
+      <DependentUpon>ucBDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBDASourcetel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBDASourcetel.Designer.cs">
+      <DependentUpon>ucBDASourcetel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFM.designer.cs">
+      <DependentUpon>ucFM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFMChild.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFMChild.Designer.cs">
+      <DependentUpon>ucFMChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMUFM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMUFM.Designer.cs">
+      <DependentUpon>ucMUFM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMUSt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMUSt.Designer.cs">
+      <DependentUpon>ucMUSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMUUPS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMUUPS.Designer.cs">
+      <DependentUpon>ucMUUPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRemark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRemark.Designer.cs">
+      <DependentUpon>ucRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRUFM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRUFM.Designer.cs">
+      <DependentUpon>ucRUFM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRUSt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRUSt.Designer.cs">
+      <DependentUpon>ucRUSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSearch.Designer.cs">
+      <DependentUpon>ucSearch.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDebug.resx">
+      <DependentUpon>frmDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RuSt.resx">
+      <DependentUpon>RuSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stationSt.resx">
+      <DependentUpon>stationSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBDA.resx">
+      <DependentUpon>ucBDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBDASourcetel.resx">
+      <DependentUpon>ucBDASourcetel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFM.resx">
+      <DependentUpon>ucFM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFMChild.resx">
+      <DependentUpon>ucFMChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMUFM.resx">
+      <DependentUpon>ucMUFM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMUSt.resx">
+      <DependentUpon>ucMUSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMUUPS.resx">
+      <DependentUpon>ucMUUPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRemark.resx">
+      <DependentUpon>ucRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRUFM.resx">
+      <DependentUpon>ucRUFM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRUSt.resx">
+      <DependentUpon>ucRUSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSearch.resx">
+      <DependentUpon>ucSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st_Error.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st_Normal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st_OFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st_ON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ber_01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ber_02.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
