@@ -26,7 +26,7 @@
         /// 디자이너 지원에 필요한 메서드입니다. 
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
         /// </summary>
-        private void InitializeComponent_()
+        private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucRUSt));
             this.panelRURssi = new System.Windows.Forms.Panel();
@@ -113,8 +113,8 @@
             this.pbRUMainSpare1 = new System.Windows.Forms.PictureBox();
             this.pbRUMainSpare2 = new System.Windows.Forms.PictureBox();
             this.pb주예비동작상태 = new System.Windows.Forms.PictureBox();
-            this.ucFMChild = new NMS.ucFMChild();
             this.ucBDASourcetel = new NMS.ucBDASourcetel();
+            this.ucFMChild = new NMS.ucFMChild();
             this.panelRURssi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRSSI)).BeginInit();
             this.panelRU카드상태.SuspendLayout();
@@ -1095,14 +1095,6 @@
             this.pb주예비동작상태.TabIndex = 222;
             this.pb주예비동작상태.TabStop = false;
             // 
-            // ucFMChild
-            // 
-            this.ucFMChild.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucFMChild.BackgroundImage")));
-            this.ucFMChild.Location = new System.Drawing.Point(1236, 0);
-            this.ucFMChild.Name = "ucFMChild";
-            this.ucFMChild.Size = new System.Drawing.Size(400, 385);
-            this.ucFMChild.TabIndex = 249;
-            // 
             // ucBDASourcetel
             // 
             this.ucBDASourcetel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBDASourcetel.BackgroundImage")));
@@ -1110,6 +1102,14 @@
             this.ucBDASourcetel.Name = "ucBDASourcetel";
             this.ucBDASourcetel.Size = new System.Drawing.Size(400, 400);
             this.ucBDASourcetel.TabIndex = 250;
+            // 
+            // ucFMChild
+            // 
+            this.ucFMChild.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucFMChild.BackgroundImage")));
+            this.ucFMChild.Location = new System.Drawing.Point(1236, 0);
+            this.ucFMChild.Name = "ucFMChild";
+            this.ucFMChild.Size = new System.Drawing.Size(400, 385);
+            this.ucFMChild.TabIndex = 249;
             // 
             // ucRUSt
             // 
@@ -1180,7 +1180,7 @@
 
         }
 
-        private void InitializeComponent()
+        private void InitializeComponent_()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucRUSt));
             this.panelRURssi = new System.Windows.Forms.Panel();

@@ -380,6 +380,7 @@ using System.Windows.Forms;
 
 using System.IO;
 using System.Collections;
+using System.Threading;
 
 namespace NMS
 {
@@ -1035,7 +1036,6 @@ namespace NMS
             btRc.Add(btRC16); btRc.Add(btRC17); btRc.Add(btRC18); btRc.Add(btRC19); btRc.Add(btRC20);
             btRc.Add(btRC21); btRc.Add(btRC22); btRc.Add(btRC23); btRc.Add(btRC24);
             //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
 
 
             #region 중앙선 전용 설정..
@@ -11434,188 +11434,225 @@ namespace NMS
             else SetVisible(ucErrorSearch, true);
         }
 
+        /// <summary>
+        /// 검색 버튼 클릭
+        /// </summary>
+        /// <param name="muID"></param>
+        /// <param name="ruID"></param>
+        /// <param name="bdaID"></param>
+        /// <param name="kind"></param>
+        /// <param name="errKind"></param>
+        /// <param name="searchWord"></param>
+        /// <param name="startDateTime"></param>
+        /// <param name="stopDateTime"></param>
         private void ucErrorSearch_searchClick(int muID, int ruID, int bdaID, int kind, int errKind, string searchWord, DateTime startDateTime, DateTime stopDateTime)
         {
-            int i = 0, j = 0;
+            Cursor = Cursors.WaitCursor;
+            
+            Thread t = new Thread( new ThreadStart ( ()=>{
 
-            ArrayList tmpResultList = new ArrayList();  //검색결과를 저장할 배열
-
-            if (kind == 4)
-            {   //운용내역 검색
-                ucErrorSearch.ListViewClear();
-
-                string strSearchWord = searchWord;   //검색어
-
-                tmpResultList = fbDBMS_StatusListInfo.Find(startDateTime, stopDateTime, strSearchWord);
-
-                for (i = 0; i < tmpResultList.Count; i++)
+                Invoke(new MethodInvoker(() =>
                 {
-                    statusListInfo tmpStatusList = (statusListInfo)tmpResultList[i];
+                    int i = 0, j = 0;
 
-                    string[] tmpData = new string[4];
+                    ArrayList tmpResultList = new ArrayList();  //검색결과를 저장할 배열
 
-                    tmpData[0] = (i + 1).ToString();
-                    tmpData[1] = tmpStatusList.datetime.ToShortDateString();
-                    tmpData[2] = tmpStatusList.datetime.ToLongTimeString();
-                    tmpData[3] = tmpStatusList.content;
-
-                    ListViewItem tmpLV = new ListViewItem(tmpData);
-                    ucErrorSearch.ListViewInsert(i, tmpLV);
-                }
-            }
-            else
-            {   //장애내역 검색
-                DataSet ds = new DataSet();
-
-                TimeSpan tmpTimeSpan = stopDateTime - startDateTime;
-
-                //장비별 장애이력 저장할 변수 초기화
-                for (i = 0; i < muErr.Length; i++)
-                {
-                    muErrResult[i].errCode.Clear();
-                    muErrResult[i].errDateTime.Clear();
-                    muErrResult[i].errContent.Clear();
-
-                    for (j = 0; j < 28; j++)
+                    if (kind == 4)
                     {
-                        muErr[i].cntErr[j] = 0;
-                        muErr[i].flagErr[j] = false;
-                    }
-                }
+                        #region 운용 내역
+                        //운용내역 검색
+                        ucErrorSearch.ListViewClear();
 
-                DataSet[] searchResultDS = new DataSet[tmpTimeSpan.Days + 1];   //날자수 만큼 검색 결과를 저장할 변수
+                        string strSearchWord = searchWord;   //검색어
 
-                //날자별로 DataBase 파일에 접속하여 검색
-                for (i = 0; i < tmpTimeSpan.Days + 1; i++)
-                {
-                    searchResultDS[i] = new DataSet();
+                        tmpResultList = fbDBMS_StatusListInfo.Find(startDateTime, stopDateTime, strSearchWord);
 
-                    DateTime tmpDate = startDateTime.AddDays(i);
-
-                    string tmpPath = clsCommon.DataBasePath + tmpDate.Year.ToString("0000") + @"\";
-                    string dbFile = "NMS_" + tmpDate.Year.ToString("0000") + tmpDate.Month.ToString("00") + tmpDate.Day.ToString("00") + ".FDB";
-
-                    if (System.IO.File.Exists(tmpPath + dbFile))
-                    {
-                        if (searchDBMS != null)
+                        for (i = 0; i < tmpResultList.Count; i++)
                         {
-                            searchDBMS.Dispose();
-                            searchDBMS = null;
+                            statusListInfo tmpStatusList = (statusListInfo)tmpResultList[i];
+
+                            string[] tmpData = new string[4];
+
+                            tmpData[0] = (i + 1).ToString();
+                            tmpData[1] = tmpStatusList.datetime.ToShortDateString();
+                            tmpData[2] = tmpStatusList.datetime.ToLongTimeString();
+                            tmpData[3] = tmpStatusList.content;
+
+                            ListViewItem tmpLV = new ListViewItem(tmpData);
+                            ucErrorSearch.ListViewInsert(i, tmpLV);
+                        }
+                        #endregion
+                    }
+                    else
+                    {
+                        #region 장애 내역
+                        //장애내역 검색
+                        DataSet ds = new DataSet();
+
+                        TimeSpan tmpTimeSpan = stopDateTime - startDateTime;
+
+                        //장비별 장애이력 저장할 변수 초기화
+                        for (i = 0; i < muErr.Length; i++)
+                        {
+                            muErrResult[i].errCode.Clear();
+                            muErrResult[i].errDateTime.Clear();
+                            muErrResult[i].errContent.Clear();
+
+                            for (j = 0; j < 28; j++)
+                            {
+                                muErr[i].cntErr[j] = 0;
+                                muErr[i].flagErr[j] = false;
+                            }
                         }
 
-                        searchDBMS = new nmsDBMS();
-                        searchDBMS.DBConnect(tmpPath + dbFile);
+                        DataSet[] searchResultDS = new DataSet[tmpTimeSpan.Days + 1];   //날자수 만큼 검색 결과를 저장할 변수
 
-                        switch (kind)
+                        //날자별로 DataBase 파일에 접속하여 검색
+                        for (i = 0; i < tmpTimeSpan.Days + 1; i++)
                         {
-                            case 0:     //MU 장애내역
-                                switch (errKind)
+                            searchResultDS[i] = new DataSet();
+
+                            DateTime tmpDate = startDateTime.AddDays(i);
+
+                            string tmpPath = clsCommon.DataBasePath + tmpDate.Year.ToString("0000") + @"\";
+                            string dbFile = "NMS_" + tmpDate.Year.ToString("0000") + tmpDate.Month.ToString("00") + tmpDate.Day.ToString("00") + ".FDB";
+
+                            if (System.IO.File.Exists(tmpPath + dbFile))
+                            {
+                                if (searchDBMS != null)
                                 {
-                                    case 22:
-                                    case 23:
-                                    case 24:
-                                    case 25:
-                                        searchResultDS[i] = searchDBMS.UPSIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID);
-                                        break;
-
-                                    default:
-                                        searchResultDS[i] = searchDBMS.MuIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID);
-                                        break;
+                                    searchDBMS.Dispose();
+                                    searchDBMS = null;
                                 }
-                                break;
 
-                            case 1:     //RU 장애내역
-                                searchResultDS[i] = searchDBMS.RuIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID);
-                                break;
+                                searchDBMS = new nmsDBMS();
+                                searchDBMS.DBConnect(tmpPath + dbFile);
 
-                            case 2:     //BDA 장애내역
-                                switch (clsCommon.nmsGUIUser)
+                                switch (kind)
                                 {
-                                    case "경춘선":
-                                        searchResultDS[i] = searchDBMS.BDAIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID, bdaID);
+                                    case 0:     //MU 장애내역
+                                        switch (errKind)
+                                        {
+                                            case 22:
+                                            case 23:
+                                            case 24:
+                                            case 25:
+                                                searchResultDS[i] = searchDBMS.UPSIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID);
+                                                break;
+
+                                            default:
+                                                searchResultDS[i] = searchDBMS.MuIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID);
+                                                break;
+                                        }
                                         break;
 
-                                    case "중앙선":
-                                        searchResultDS[i] = searchDBMS.SourcetelBDAIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID, bdaID);
+                                    case 1:     //RU 장애내역
+                                        searchResultDS[i] = searchDBMS.RuIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID);
                                         break;
 
-                                    default:                                        
-                                        break;
-                                }
-                                break;
+                                    case 2:     //BDA 장애내역
+                                        switch (clsCommon.nmsGUIUser)
+                                        {
+                                            case "경춘선":
+                                                searchResultDS[i] = searchDBMS.BDAIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID, bdaID);
+                                                break;
 
-                            case 3:     //FM 장애내역
-                                bool flagRuA = false;
-                                if (ruID == 0) flagRuA = true;
+                                            case "중앙선":
+                                                searchResultDS[i] = searchDBMS.SourcetelBDAIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID, bdaID);
+                                                break;
+
+                                            default:                                        
+                                                break;
+                                        }
+                                        break;
+
+                                    case 3:     //FM 장애내역
+                                        bool flagRuA = false;
+                                        if (ruID == 0) flagRuA = true;
                                     
-                                searchResultDS[i] = searchDBMS.FMIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID, flagRuA);
-                                break;
-                        }
-                    }
-                }
-
-                for (i = 0; i < tmpTimeSpan.Days + 1; i++)
-                {
-                    if (searchResultDS[i].Tables.Count == 0) continue;
-
-                    for (j = 0; j < searchResultDS[i].Tables[0].Rows.Count; j++)
-                    {
-                        int tmpIndex = 0;
-
-                        switch (kind)
-                        {
-                            case 0: tmpIndex = 2; break;    //MU 장애내역
-                            case 1: tmpIndex = 3; break;    //RU 장애내역
-                            case 2: tmpIndex = 4; break;    //BDA 장애내역
-                            case 3: tmpIndex = 3; break;    //FM 장애내역
-                        }
-
-                        object tmpOB = searchResultDS[i].Tables[0].Rows[j][tmpIndex];
-
-                        if ((string)(tmpOB) == "1")
-                        {
-                            if (!muErr[0].flagErr[0])
-                            {
-                                muErr[0].cntErr[0]++;
-                                muErr[0].flagErr[0] = true;
-
-                                muErrResult[0].errCode.Add(0);
-                                muErrResult[0].errDateTime.Add((DateTime)(searchResultDS[i].Tables[0].Rows[i][0]));
-                                muErrResult[0].errContent.Add(clsCommon.errContent[kind].errContent[errKind] + " 장애");
+                                        searchResultDS[i] = searchDBMS.FMIndividualErrorFind(startDateTime, stopDateTime, clsCommon.errContent[kind].errName[errKind], muID, ruID, flagRuA);
+                                        break;
+                                }
                             }
                         }
-                        else
-                        {
-                            if (muErr[0].flagErr[0])
-                            {
-                                muErr[0].flagErr[0] = false;
 
-                                muErrResult[0].errCode.Add(0);
-                                muErrResult[0].errDateTime.Add((DateTime)(searchResultDS[i].Tables[0].Rows[i][0]));
-                                muErrResult[0].errContent.Add(clsCommon.errContent[kind].errContent[errKind] + " 장애 복구");
+                        for (i = 0; i < tmpTimeSpan.Days + 1; i++)
+                        {
+                            if (searchResultDS[i].Tables.Count == 0) continue;
+
+                            for (j = 0; j < searchResultDS[i].Tables[0].Rows.Count; j++)
+                            {
+                                int tmpIndex = 0;
+
+                                switch (kind)
+                                {
+                                    case 0: tmpIndex = 2; break;    //MU 장애내역
+                                    case 1: tmpIndex = 3; break;    //RU 장애내역
+                                    case 2: tmpIndex = 4; break;    //BDA 장애내역
+                                    case 3: tmpIndex = 3; break;    //FM 장애내역
+                                }
+
+                                object tmpOB = searchResultDS[i].Tables[0].Rows[j][tmpIndex];
+
+                                if ((string)(tmpOB) == "1")
+                                {
+                                    if (!muErr[0].flagErr[0])
+                                    {
+                                        muErr[0].cntErr[0]++;
+                                        muErr[0].flagErr[0] = true;
+
+                                        muErrResult[0].errCode.Add(0);
+                                        muErrResult[0].errDateTime.Add((DateTime)(searchResultDS[i].Tables[0].Rows[i][0]));
+                                        muErrResult[0].errContent.Add(clsCommon.errContent[kind].errContent[errKind] + " 장애");
+                                    }
+                                }
+                                else
+                                {
+                                    if (muErr[0].flagErr[0])
+                                    {
+                                        muErr[0].flagErr[0] = false;
+
+                                        muErrResult[0].errCode.Add(0);
+                                        muErrResult[0].errDateTime.Add((DateTime)(searchResultDS[i].Tables[0].Rows[i][0]));
+                                        muErrResult[0].errContent.Add(clsCommon.errContent[kind].errContent[errKind] + " 장애 복구");
+                                    }
+                                }
                             }
                         }
+
+                        ucErrorSearch.ListViewClear();
+
+                        for (i = 0; i < muErrResult[0].errCode.Count; i++)
+                        {
+                            SetdataGridViewMuErrorStValue(dgvErrorStDetailDiaplay, i, muErrResult[0].errDateTime[i].ToString("yyyy-MM-dd HH:mm:ss"), muErrResult[0].errContent[i]);
+
+                            string[] tmpData = new string[4];
+
+                            tmpData[0] = (i + 1).ToString();
+                            tmpData[1] = muErrResult[0].errDateTime[i].ToString("yyyy-MM-dd");
+                            tmpData[2] = muErrResult[0].errDateTime[i].ToString("HH:mm:ss");
+                            tmpData[3] = muErrResult[0].errContent[i];
+
+                            ListViewItem tmpLV = new ListViewItem(tmpData);
+
+                            ucErrorSearch.ListViewInsert(i, tmpLV);
+                        }
+
+                        #endregion
                     }
-                }
 
-                ucErrorSearch.ListViewClear();
 
-                for (i = 0; i < muErrResult[0].errCode.Count; i++)
-                {
-                    SetdataGridViewMuErrorStValue(dgvErrorStDetailDiaplay, i, muErrResult[0].errDateTime[i].ToString("yyyy-MM-dd HH:mm:ss"), muErrResult[0].errContent[i]);
+               
+                    Cursor = Cursors.Default;
 
-                    string[] tmpData = new string[4];
+                }));
 
-                    tmpData[0] = (i + 1).ToString();
-                    tmpData[1] = muErrResult[0].errDateTime[i].ToString("yyyy-MM-dd");
-                    tmpData[2] = muErrResult[0].errDateTime[i].ToString("HH:mm:ss");
-                    tmpData[3] = muErrResult[0].errContent[i];
+            }));
 
-                    ListViewItem tmpLV = new ListViewItem(tmpData);
+            t.Start();
 
-                    ucErrorSearch.ListViewInsert(i, tmpLV);
-                }
-            }
+           
+
         }
         //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         #endregion
@@ -12372,6 +12409,7 @@ namespace NMS
 
         #region NMS주장치와의 통신 관련
         //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
         #region NMS주장치와의 접속관련 이벤트
         //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         void nmsMainMachine_nms_SocketConnected()
@@ -12401,6 +12439,7 @@ namespace NMS
             SetColor(lbl_Connected1, Color.Blue);
             AddStatus("NMS주장치와의 접속이 끊겼습니다.");
         }
+
         //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         #endregion
 
@@ -12475,6 +12514,12 @@ namespace NMS
             //AddStatus(stationList[muID - 1] + "의 MU에서 AF Gain값을 보고하였습니다.");
         }
 
+
+        /// <summary>
+        /// Mu 상태 정보를 수신 한 경우 처리..
+        /// </summary>
+        /// <param name="muID"></param>
+        /// <param name="muData"></param>
         void nmsMainMachine_nms_MuStReport(byte muID, MUData muData)
         {
             int i = 0;
@@ -13498,6 +13543,8 @@ namespace NMS
 
         #endregion
 
+
+        #region 상태 정보 화면에 표시
         private void nmsMUError_Display(byte muID)
         {   //전체화면에 주예비 상태 및 장애 표시
             int tmpResult = 0;
@@ -14120,6 +14167,7 @@ namespace NMS
                 MuUps.UpsStInit(false);
         }
 
+        #endregion
 
         #endregion
 

@@ -41,18 +41,21 @@ namespace NMS
 
         public ucRUSt()
         {
-            switch (clsCommon.nmsGUIUser)
-            {
-                case "전라선":
-                case "중앙선":
-                    InitializeComponent_();
-                    break;
 
-                case "경춘선":
-                default:
-                    InitializeComponent();
-                    break;
-            }
+            InitializeComponent();
+
+            //switch (clsCommon.nmsGUIUser)
+            //{
+            //    case "전라선":
+            //    case "중앙선":
+                  
+            //        break;
+
+            //    case "경춘선":
+            //    default:
+            //        InitializeComponent();
+            //        break;
+            //}
 
             #region RU감시화면 컨트롤 배열
             //'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
