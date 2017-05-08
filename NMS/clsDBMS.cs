@@ -37,8 +37,17 @@ namespace NMS
         {
             try
             {
-                fb.UserID = "KTC";
-                fb.Password = "KTC2233";
+                //fb.UserID = "KTC";
+                //fb.Password = "KTC2233";
+                string LOGIN_PATH = Directory.GetCurrentDirectory() + "\\db_login.txt";
+
+                GetLoginData(LOGIN_PATH);
+
+                //fb.UserID = "sysdba";
+                //fb.Password = "masterkey";
+
+
+
                 fb.Database = fileName;
 
                 fbDBConn = new FbConnection(fb.ToString());
@@ -46,6 +55,24 @@ namespace NMS
             catch
             {
             }
+        }
+
+        private void GetLoginData(string path)
+        {
+            if (File.Exists(path))
+            {
+                var lines = File.ReadAllLines(path);
+
+                fb.UserID = lines[0];
+                fb.Password = lines[1];
+            }
+            else
+            {
+                fb.UserID = "sysdba";
+                fb.Password = "masterkey";
+
+            }
+
         }
     }
 
@@ -147,8 +174,11 @@ namespace NMS
                 fbCMD_Insert.ExecuteNonQuery();
                 fbCMD_Insert.Dispose();
             }
-            catch
+            catch(Exception ex )
             {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace); 
+
                 flagResult = false;
             }
 

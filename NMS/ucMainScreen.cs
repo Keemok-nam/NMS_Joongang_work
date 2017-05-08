@@ -13,6 +13,7 @@ namespace NMS
     {
         private List<Button> mMuList;
         private List<Button> mRuList;
+
         public ucMainScreen()
         {
             InitializeComponent();

@@ -10960,24 +10960,30 @@ namespace NMS
         {
             SetdataGridViewClear(dgvErrorStDetailDiaplay);
 
-            int index = lvMUErrorStAllDiaplay.SelectedItems[0].Index;
-
             try
             {
-                SetText(lblErrorStDetailDiaplay, "장애 상세 내역( " + stationList[index] + "의 MU )");
-            }
-            catch
+                int index = lvMUErrorStAllDiaplay.SelectedItems[0].Index;
+
+                try
+                {
+                    SetText(lblErrorStDetailDiaplay, "장애 상세 내역( " + stationList[index] + "의 MU )");
+                }
+                catch
+                {
+                    SetText(lblErrorStDetailDiaplay, "장애 상세 내역()");
+                }
+
+                for (int i = 0; i < muErrResult[index].errCode.Count; i++)
+                    SetdataGridViewMuErrorStValue(dgvErrorStDetailDiaplay, i, muErrResult[index].errDateTime[i].ToString("yyyy-MM-dd HH:mm:ss"), muErrResult[index].errContent[i]);
+
+                dgvErrorStDetailDiaplay.Sort(dgvErrorStDetailDiaplay.Columns[1], ListSortDirection.Ascending);
+
+                for (int i = 0; i < muErrResult[index].errCode.Count; i++)
+                    SetdataGridViewMuErrorStIndex(dgvErrorStDetailDiaplay, i, muErrResult[index].errDateTime[i].ToString(), muErrResult[index].errContent[i]);
+            }catch
             {
-                SetText(lblErrorStDetailDiaplay, "장애 상세 내역()");
+
             }
-
-            for (int i = 0; i < muErrResult[index].errCode.Count; i++)
-                SetdataGridViewMuErrorStValue(dgvErrorStDetailDiaplay, i, muErrResult[index].errDateTime[i].ToString("yyyy-MM-dd HH:mm:ss"), muErrResult[index].errContent[i]);
-
-            dgvErrorStDetailDiaplay.Sort(dgvErrorStDetailDiaplay.Columns[1], ListSortDirection.Ascending);
-
-            for (int i = 0; i < muErrResult[index].errCode.Count; i++)
-                SetdataGridViewMuErrorStIndex(dgvErrorStDetailDiaplay, i, muErrResult[index].errDateTime[i].ToString(), muErrResult[index].errContent[i]);
         }
 
         private void lvRUErrorStAllDiaplay_DoubleClick(object sender, EventArgs e)
