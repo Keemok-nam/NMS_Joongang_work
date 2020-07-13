@@ -208,6 +208,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucMUSt.resx">
       <DependentUpon>ucMUSt.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ucMUUPS.resx">
       <DependentUpon>ucMUUPS.cs</DependentUpon>

@@ -40,56 +40,6 @@
             this.gbFaultInfoAll = new System.Windows.Forms.GroupBox();
             this.cbArrangement = new System.Windows.Forms.ComboBox();
             this.btArrangement = new System.Windows.Forms.Button();
-            this.gbRcRoute = new System.Windows.Forms.GroupBox();
-            this.panelRC = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btRC24 = new System.Windows.Forms.Button();
-            this.btRC23 = new System.Windows.Forms.Button();
-            this.btRC22 = new System.Windows.Forms.Button();
-            this.btRC21 = new System.Windows.Forms.Button();
-            this.btRC20 = new System.Windows.Forms.Button();
-            this.btRC19 = new System.Windows.Forms.Button();
-            this.btRC18 = new System.Windows.Forms.Button();
-            this.btRC17 = new System.Windows.Forms.Button();
-            this.btRC16 = new System.Windows.Forms.Button();
-            this.btRC1 = new System.Windows.Forms.Button();
-            this.btRC2 = new System.Windows.Forms.Button();
-            this.btRC3 = new System.Windows.Forms.Button();
-            this.btRC4 = new System.Windows.Forms.Button();
-            this.btRC5 = new System.Windows.Forms.Button();
-            this.btRC6 = new System.Windows.Forms.Button();
-            this.btRC7 = new System.Windows.Forms.Button();
-            this.btRC8 = new System.Windows.Forms.Button();
-            this.btRC9 = new System.Windows.Forms.Button();
-            this.btRC10 = new System.Windows.Forms.Button();
-            this.btRC11 = new System.Windows.Forms.Button();
-            this.btRC12 = new System.Windows.Forms.Button();
-            this.btRC13 = new System.Windows.Forms.Button();
-            this.btRC14 = new System.Windows.Forms.Button();
-            this.btRC15 = new System.Windows.Forms.Button();
-            this.pbRC = new System.Windows.Forms.PictureBox();
-            this.panelRCAll = new System.Windows.Forms.Panel();
-            this.btRcStation9 = new System.Windows.Forms.Button();
-            this.btRcStation10 = new System.Windows.Forms.Button();
-            this.btRcStation11 = new System.Windows.Forms.Button();
-            this.btRcStation12 = new System.Windows.Forms.Button();
-            this.btRcStation13 = new System.Windows.Forms.Button();
-            this.btRcStation14 = new System.Windows.Forms.Button();
-            this.btRcStation15 = new System.Windows.Forms.Button();
-            this.btRcStation8 = new System.Windows.Forms.Button();
-            this.btRcStation7 = new System.Windows.Forms.Button();
-            this.btRcStation6 = new System.Windows.Forms.Button();
-            this.btRcStation5 = new System.Windows.Forms.Button();
-            this.btRcStation4 = new System.Windows.Forms.Button();
-            this.btRcStation3 = new System.Windows.Forms.Button();
-            this.btRcStation2 = new System.Windows.Forms.Button();
-            this.btRcStation1 = new System.Windows.Forms.Button();
-            this.pbRCRoute = new System.Windows.Forms.PictureBox();
             this.gbMuRoute = new System.Windows.Forms.GroupBox();
             this.panelMU = new System.Windows.Forms.Panel();
             this.btMuBda20 = new System.Windows.Forms.Button();
@@ -233,6 +183,56 @@
             this.btMuStation1 = new System.Windows.Forms.Button();
             this.btMuStation14 = new System.Windows.Forms.Button();
             this.pbMURoute = new System.Windows.Forms.PictureBox();
+            this.gbRcRoute = new System.Windows.Forms.GroupBox();
+            this.panelRC = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btRC24 = new System.Windows.Forms.Button();
+            this.btRC23 = new System.Windows.Forms.Button();
+            this.btRC22 = new System.Windows.Forms.Button();
+            this.btRC21 = new System.Windows.Forms.Button();
+            this.btRC20 = new System.Windows.Forms.Button();
+            this.btRC19 = new System.Windows.Forms.Button();
+            this.btRC18 = new System.Windows.Forms.Button();
+            this.btRC17 = new System.Windows.Forms.Button();
+            this.btRC16 = new System.Windows.Forms.Button();
+            this.btRC1 = new System.Windows.Forms.Button();
+            this.btRC2 = new System.Windows.Forms.Button();
+            this.btRC3 = new System.Windows.Forms.Button();
+            this.btRC4 = new System.Windows.Forms.Button();
+            this.btRC5 = new System.Windows.Forms.Button();
+            this.btRC6 = new System.Windows.Forms.Button();
+            this.btRC7 = new System.Windows.Forms.Button();
+            this.btRC8 = new System.Windows.Forms.Button();
+            this.btRC9 = new System.Windows.Forms.Button();
+            this.btRC10 = new System.Windows.Forms.Button();
+            this.btRC11 = new System.Windows.Forms.Button();
+            this.btRC12 = new System.Windows.Forms.Button();
+            this.btRC13 = new System.Windows.Forms.Button();
+            this.btRC14 = new System.Windows.Forms.Button();
+            this.btRC15 = new System.Windows.Forms.Button();
+            this.pbRC = new System.Windows.Forms.PictureBox();
+            this.panelRCAll = new System.Windows.Forms.Panel();
+            this.btRcStation9 = new System.Windows.Forms.Button();
+            this.btRcStation10 = new System.Windows.Forms.Button();
+            this.btRcStation11 = new System.Windows.Forms.Button();
+            this.btRcStation12 = new System.Windows.Forms.Button();
+            this.btRcStation13 = new System.Windows.Forms.Button();
+            this.btRcStation14 = new System.Windows.Forms.Button();
+            this.btRcStation15 = new System.Windows.Forms.Button();
+            this.btRcStation8 = new System.Windows.Forms.Button();
+            this.btRcStation7 = new System.Windows.Forms.Button();
+            this.btRcStation6 = new System.Windows.Forms.Button();
+            this.btRcStation5 = new System.Windows.Forms.Button();
+            this.btRcStation4 = new System.Windows.Forms.Button();
+            this.btRcStation3 = new System.Windows.Forms.Button();
+            this.btRcStation2 = new System.Windows.Forms.Button();
+            this.btRcStation1 = new System.Windows.Forms.Button();
+            this.pbRCRoute = new System.Windows.Forms.PictureBox();
             this.gbStation = new System.Windows.Forms.GroupBox();
             this.gb주장치 = new System.Windows.Forms.GroupBox();
             this.gbFaultInfoMain = new System.Windows.Forms.GroupBox();
@@ -934,12 +934,19 @@
             this.lblCCEErrSt1 = new System.Windows.Forms.Label();
             this.lblCCEErrSt3 = new System.Windows.Forms.Label();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ucErrorSearch = new NMS.ucSearch();
             this.MainScreen = new NMS.ucMainScreen();
             this.ucRemark1 = new NMS.ucRemark();
             this.MainMachineSt2 = new NMS.stationSt();
             this.MainMachineSt3 = new NMS.stationSt();
             this.MainMachineSt1 = new NMS.stationSt();
-            this.ucErrorSearch = new NMS.ucSearch();
+            this.MuUps = new NMS.ucMUUPS();
+            this.MuFm = new NMS.ucMUFM();
+            this.MUSt = new NMS.ucMUSt();
+            this.ruSt1_4 = new NMS.RuSt();
+            this.ruSt1_1 = new NMS.RuSt();
+            this.ruSt1_3 = new NMS.RuSt();
+            this.ruSt1_2 = new NMS.RuSt();
             this.RuFm = new NMS.ucRUFM();
             this.RUSt = new NMS.ucRUSt();
             this.ucBDA4 = new NMS.ucBDA();
@@ -950,22 +957,15 @@
             this.ruSt2_3 = new NMS.RuSt();
             this.ruSt2_1 = new NMS.RuSt();
             this.ruSt2_2 = new NMS.RuSt();
-            this.MuUps = new NMS.ucMUUPS();
-            this.MuFm = new NMS.ucMUFM();
-            this.MUSt = new NMS.ucMUSt();
-            this.ruSt1_4 = new NMS.RuSt();
-            this.ruSt1_1 = new NMS.RuSt();
-            this.ruSt1_3 = new NMS.RuSt();
-            this.ruSt1_2 = new NMS.RuSt();
             this.gbFaultInfoAll.SuspendLayout();
+            this.gbMuRoute.SuspendLayout();
+            this.panelMU.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMURoute)).BeginInit();
             this.gbRcRoute.SuspendLayout();
             this.panelRC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRC)).BeginInit();
             this.panelRCAll.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRCRoute)).BeginInit();
-            this.gbMuRoute.SuspendLayout();
-            this.panelMU.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMURoute)).BeginInit();
             this.gb주장치.SuspendLayout();
             this.gbFaultInfoMain.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -1234,563 +1234,6 @@
             this.btArrangement.UseVisualStyleBackColor = true;
             this.btArrangement.Visible = false;
             this.btArrangement.Click += new System.EventHandler(this.btArrangement_Click);
-            // 
-            // gbRcRoute
-            // 
-            this.gbRcRoute.Controls.Add(this.panelRC);
-            this.gbRcRoute.Controls.Add(this.panelRCAll);
-            this.gbRcRoute.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.gbRcRoute.Location = new System.Drawing.Point(20, 47);
-            this.gbRcRoute.Name = "gbRcRoute";
-            this.gbRcRoute.Size = new System.Drawing.Size(1848, 780);
-            this.gbRcRoute.TabIndex = 122;
-            this.gbRcRoute.TabStop = false;
-            this.gbRcRoute.Text = "RC 통화권";
-            this.gbRcRoute.Visible = false;
-            // 
-            // panelRC
-            // 
-            this.panelRC.Controls.Add(this.button6);
-            this.panelRC.Controls.Add(this.button5);
-            this.panelRC.Controls.Add(this.button4);
-            this.panelRC.Controls.Add(this.button3);
-            this.panelRC.Controls.Add(this.button2);
-            this.panelRC.Controls.Add(this.button1);
-            this.panelRC.Controls.Add(this.btRC24);
-            this.panelRC.Controls.Add(this.btRC23);
-            this.panelRC.Controls.Add(this.btRC22);
-            this.panelRC.Controls.Add(this.btRC21);
-            this.panelRC.Controls.Add(this.btRC20);
-            this.panelRC.Controls.Add(this.btRC19);
-            this.panelRC.Controls.Add(this.btRC18);
-            this.panelRC.Controls.Add(this.btRC17);
-            this.panelRC.Controls.Add(this.btRC16);
-            this.panelRC.Controls.Add(this.btRC1);
-            this.panelRC.Controls.Add(this.btRC2);
-            this.panelRC.Controls.Add(this.btRC3);
-            this.panelRC.Controls.Add(this.btRC4);
-            this.panelRC.Controls.Add(this.btRC5);
-            this.panelRC.Controls.Add(this.btRC6);
-            this.panelRC.Controls.Add(this.btRC7);
-            this.panelRC.Controls.Add(this.btRC8);
-            this.panelRC.Controls.Add(this.btRC9);
-            this.panelRC.Controls.Add(this.btRC10);
-            this.panelRC.Controls.Add(this.btRC11);
-            this.panelRC.Controls.Add(this.btRC12);
-            this.panelRC.Controls.Add(this.btRC13);
-            this.panelRC.Controls.Add(this.btRC14);
-            this.panelRC.Controls.Add(this.btRC15);
-            this.panelRC.Controls.Add(this.pbRC);
-            this.panelRC.Location = new System.Drawing.Point(0, 24);
-            this.panelRC.Name = "panelRC";
-            this.panelRC.Size = new System.Drawing.Size(1836, 721);
-            this.panelRC.TabIndex = 2;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(520, 522);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(135, 70);
-            this.button6.TabIndex = 47;
-            this.button6.Text = "button1";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(836, 571);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(135, 70);
-            this.button5.TabIndex = 46;
-            this.button5.Text = "button1";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1154, 577);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 70);
-            this.button4.TabIndex = 45;
-            this.button4.Text = "button1";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1154, 181);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 70);
-            this.button3.TabIndex = 44;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(836, 185);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 70);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(519, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 70);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            // 
-            // btRC24
-            // 
-            this.btRC24.Location = new System.Drawing.Point(0, 0);
-            this.btRC24.Name = "btRC24";
-            this.btRC24.Size = new System.Drawing.Size(135, 70);
-            this.btRC24.TabIndex = 40;
-            this.btRC24.Text = "button1";
-            this.btRC24.UseVisualStyleBackColor = true;
-            this.btRC24.Visible = false;
-            // 
-            // btRC23
-            // 
-            this.btRC23.Location = new System.Drawing.Point(0, 0);
-            this.btRC23.Name = "btRC23";
-            this.btRC23.Size = new System.Drawing.Size(135, 70);
-            this.btRC23.TabIndex = 39;
-            this.btRC23.Text = "button1";
-            this.btRC23.UseVisualStyleBackColor = true;
-            this.btRC23.Visible = false;
-            // 
-            // btRC22
-            // 
-            this.btRC22.Location = new System.Drawing.Point(0, 0);
-            this.btRC22.Name = "btRC22";
-            this.btRC22.Size = new System.Drawing.Size(135, 70);
-            this.btRC22.TabIndex = 38;
-            this.btRC22.Text = "button1";
-            this.btRC22.UseVisualStyleBackColor = true;
-            this.btRC22.Visible = false;
-            // 
-            // btRC21
-            // 
-            this.btRC21.Location = new System.Drawing.Point(0, 0);
-            this.btRC21.Name = "btRC21";
-            this.btRC21.Size = new System.Drawing.Size(135, 70);
-            this.btRC21.TabIndex = 37;
-            this.btRC21.Text = "button1";
-            this.btRC21.UseVisualStyleBackColor = true;
-            this.btRC21.Visible = false;
-            // 
-            // btRC20
-            // 
-            this.btRC20.Location = new System.Drawing.Point(0, 0);
-            this.btRC20.Name = "btRC20";
-            this.btRC20.Size = new System.Drawing.Size(135, 70);
-            this.btRC20.TabIndex = 36;
-            this.btRC20.Text = "button1";
-            this.btRC20.UseVisualStyleBackColor = true;
-            this.btRC20.Visible = false;
-            // 
-            // btRC19
-            // 
-            this.btRC19.Location = new System.Drawing.Point(0, 0);
-            this.btRC19.Name = "btRC19";
-            this.btRC19.Size = new System.Drawing.Size(135, 70);
-            this.btRC19.TabIndex = 35;
-            this.btRC19.Text = "button1";
-            this.btRC19.UseVisualStyleBackColor = true;
-            this.btRC19.Visible = false;
-            // 
-            // btRC18
-            // 
-            this.btRC18.Location = new System.Drawing.Point(0, 0);
-            this.btRC18.Name = "btRC18";
-            this.btRC18.Size = new System.Drawing.Size(135, 70);
-            this.btRC18.TabIndex = 34;
-            this.btRC18.Text = "button1";
-            this.btRC18.UseVisualStyleBackColor = true;
-            this.btRC18.Visible = false;
-            // 
-            // btRC17
-            // 
-            this.btRC17.Location = new System.Drawing.Point(0, 0);
-            this.btRC17.Name = "btRC17";
-            this.btRC17.Size = new System.Drawing.Size(135, 70);
-            this.btRC17.TabIndex = 33;
-            this.btRC17.Text = "button1";
-            this.btRC17.UseVisualStyleBackColor = true;
-            this.btRC17.Visible = false;
-            // 
-            // btRC16
-            // 
-            this.btRC16.Location = new System.Drawing.Point(0, 0);
-            this.btRC16.Name = "btRC16";
-            this.btRC16.Size = new System.Drawing.Size(135, 70);
-            this.btRC16.TabIndex = 32;
-            this.btRC16.Text = "button1";
-            this.btRC16.UseVisualStyleBackColor = true;
-            this.btRC16.Visible = false;
-            // 
-            // btRC1
-            // 
-            this.btRC1.Location = new System.Drawing.Point(0, 0);
-            this.btRC1.Name = "btRC1";
-            this.btRC1.Size = new System.Drawing.Size(135, 70);
-            this.btRC1.TabIndex = 17;
-            this.btRC1.Text = "button1";
-            this.btRC1.UseVisualStyleBackColor = true;
-            this.btRC1.Visible = false;
-            this.btRC1.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC2
-            // 
-            this.btRC2.Location = new System.Drawing.Point(0, 0);
-            this.btRC2.Name = "btRC2";
-            this.btRC2.Size = new System.Drawing.Size(135, 70);
-            this.btRC2.TabIndex = 18;
-            this.btRC2.Text = "button2";
-            this.btRC2.UseVisualStyleBackColor = true;
-            this.btRC2.Visible = false;
-            this.btRC2.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC3
-            // 
-            this.btRC3.Location = new System.Drawing.Point(0, 0);
-            this.btRC3.Name = "btRC3";
-            this.btRC3.Size = new System.Drawing.Size(135, 70);
-            this.btRC3.TabIndex = 19;
-            this.btRC3.Text = "button3";
-            this.btRC3.UseVisualStyleBackColor = true;
-            this.btRC3.Visible = false;
-            this.btRC3.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC4
-            // 
-            this.btRC4.Location = new System.Drawing.Point(0, 0);
-            this.btRC4.Name = "btRC4";
-            this.btRC4.Size = new System.Drawing.Size(135, 70);
-            this.btRC4.TabIndex = 20;
-            this.btRC4.Text = "button4";
-            this.btRC4.UseVisualStyleBackColor = true;
-            this.btRC4.Visible = false;
-            this.btRC4.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC5
-            // 
-            this.btRC5.Location = new System.Drawing.Point(0, 0);
-            this.btRC5.Name = "btRC5";
-            this.btRC5.Size = new System.Drawing.Size(135, 70);
-            this.btRC5.TabIndex = 21;
-            this.btRC5.Text = "button5";
-            this.btRC5.UseVisualStyleBackColor = true;
-            this.btRC5.Visible = false;
-            this.btRC5.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC6
-            // 
-            this.btRC6.Location = new System.Drawing.Point(0, 0);
-            this.btRC6.Name = "btRC6";
-            this.btRC6.Size = new System.Drawing.Size(135, 70);
-            this.btRC6.TabIndex = 23;
-            this.btRC6.Text = "button6";
-            this.btRC6.UseVisualStyleBackColor = true;
-            this.btRC6.Visible = false;
-            this.btRC6.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC7
-            // 
-            this.btRC7.Location = new System.Drawing.Point(0, 0);
-            this.btRC7.Name = "btRC7";
-            this.btRC7.Size = new System.Drawing.Size(135, 70);
-            this.btRC7.TabIndex = 22;
-            this.btRC7.Text = "button7";
-            this.btRC7.UseVisualStyleBackColor = true;
-            this.btRC7.Visible = false;
-            this.btRC7.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC8
-            // 
-            this.btRC8.Location = new System.Drawing.Point(0, 0);
-            this.btRC8.Name = "btRC8";
-            this.btRC8.Size = new System.Drawing.Size(135, 70);
-            this.btRC8.TabIndex = 25;
-            this.btRC8.Text = "button8";
-            this.btRC8.UseVisualStyleBackColor = true;
-            this.btRC8.Visible = false;
-            this.btRC8.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC9
-            // 
-            this.btRC9.Location = new System.Drawing.Point(0, 0);
-            this.btRC9.Name = "btRC9";
-            this.btRC9.Size = new System.Drawing.Size(135, 70);
-            this.btRC9.TabIndex = 24;
-            this.btRC9.Text = "button9";
-            this.btRC9.UseVisualStyleBackColor = true;
-            this.btRC9.Visible = false;
-            this.btRC9.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC10
-            // 
-            this.btRC10.Location = new System.Drawing.Point(0, 0);
-            this.btRC10.Name = "btRC10";
-            this.btRC10.Size = new System.Drawing.Size(135, 70);
-            this.btRC10.TabIndex = 26;
-            this.btRC10.Text = "button10";
-            this.btRC10.UseVisualStyleBackColor = true;
-            this.btRC10.Visible = false;
-            this.btRC10.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC11
-            // 
-            this.btRC11.Location = new System.Drawing.Point(0, 0);
-            this.btRC11.Name = "btRC11";
-            this.btRC11.Size = new System.Drawing.Size(135, 70);
-            this.btRC11.TabIndex = 30;
-            this.btRC11.Text = "button11";
-            this.btRC11.UseVisualStyleBackColor = true;
-            this.btRC11.Visible = false;
-            this.btRC11.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC12
-            // 
-            this.btRC12.Location = new System.Drawing.Point(0, 0);
-            this.btRC12.Name = "btRC12";
-            this.btRC12.Size = new System.Drawing.Size(135, 70);
-            this.btRC12.TabIndex = 29;
-            this.btRC12.Text = "button12";
-            this.btRC12.UseVisualStyleBackColor = true;
-            this.btRC12.Visible = false;
-            this.btRC12.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC13
-            // 
-            this.btRC13.Location = new System.Drawing.Point(0, 0);
-            this.btRC13.Name = "btRC13";
-            this.btRC13.Size = new System.Drawing.Size(135, 70);
-            this.btRC13.TabIndex = 28;
-            this.btRC13.Text = "button13";
-            this.btRC13.UseVisualStyleBackColor = true;
-            this.btRC13.Visible = false;
-            this.btRC13.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC14
-            // 
-            this.btRC14.Location = new System.Drawing.Point(0, 0);
-            this.btRC14.Name = "btRC14";
-            this.btRC14.Size = new System.Drawing.Size(135, 70);
-            this.btRC14.TabIndex = 27;
-            this.btRC14.Text = "button14";
-            this.btRC14.UseVisualStyleBackColor = true;
-            this.btRC14.Visible = false;
-            this.btRC14.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // btRC15
-            // 
-            this.btRC15.Location = new System.Drawing.Point(0, 0);
-            this.btRC15.Name = "btRC15";
-            this.btRC15.Size = new System.Drawing.Size(135, 70);
-            this.btRC15.TabIndex = 31;
-            this.btRC15.Text = "button15";
-            this.btRC15.UseVisualStyleBackColor = true;
-            this.btRC15.Visible = false;
-            this.btRC15.Click += new System.EventHandler(this.btRC_Click);
-            // 
-            // pbRC
-            // 
-            this.pbRC.Location = new System.Drawing.Point(174, 0);
-            this.pbRC.Name = "pbRC";
-            this.pbRC.Size = new System.Drawing.Size(1476, 745);
-            this.pbRC.TabIndex = 41;
-            this.pbRC.TabStop = false;
-            // 
-            // panelRCAll
-            // 
-            this.panelRCAll.Controls.Add(this.btRcStation9);
-            this.panelRCAll.Controls.Add(this.btRcStation10);
-            this.panelRCAll.Controls.Add(this.btRcStation11);
-            this.panelRCAll.Controls.Add(this.btRcStation12);
-            this.panelRCAll.Controls.Add(this.btRcStation13);
-            this.panelRCAll.Controls.Add(this.btRcStation14);
-            this.panelRCAll.Controls.Add(this.btRcStation15);
-            this.panelRCAll.Controls.Add(this.btRcStation8);
-            this.panelRCAll.Controls.Add(this.btRcStation7);
-            this.panelRCAll.Controls.Add(this.btRcStation6);
-            this.panelRCAll.Controls.Add(this.btRcStation5);
-            this.panelRCAll.Controls.Add(this.btRcStation4);
-            this.panelRCAll.Controls.Add(this.btRcStation3);
-            this.panelRCAll.Controls.Add(this.btRcStation2);
-            this.panelRCAll.Controls.Add(this.btRcStation1);
-            this.panelRCAll.Controls.Add(this.pbRCRoute);
-            this.panelRCAll.Location = new System.Drawing.Point(12, 25);
-            this.panelRCAll.Name = "panelRCAll";
-            this.panelRCAll.Size = new System.Drawing.Size(1824, 745);
-            this.panelRCAll.TabIndex = 1;
-            // 
-            // btRcStation9
-            // 
-            this.btRcStation9.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation9.Name = "btRcStation9";
-            this.btRcStation9.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation9.TabIndex = 46;
-            this.btRcStation9.UseVisualStyleBackColor = true;
-            this.btRcStation9.Visible = false;
-            this.btRcStation9.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation10
-            // 
-            this.btRcStation10.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation10.Name = "btRcStation10";
-            this.btRcStation10.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation10.TabIndex = 45;
-            this.btRcStation10.UseVisualStyleBackColor = true;
-            this.btRcStation10.Visible = false;
-            this.btRcStation10.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation11
-            // 
-            this.btRcStation11.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation11.Name = "btRcStation11";
-            this.btRcStation11.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation11.TabIndex = 44;
-            this.btRcStation11.UseVisualStyleBackColor = true;
-            this.btRcStation11.Visible = false;
-            this.btRcStation11.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation12
-            // 
-            this.btRcStation12.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation12.Name = "btRcStation12";
-            this.btRcStation12.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation12.TabIndex = 43;
-            this.btRcStation12.UseVisualStyleBackColor = true;
-            this.btRcStation12.Visible = false;
-            this.btRcStation12.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation13
-            // 
-            this.btRcStation13.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation13.Name = "btRcStation13";
-            this.btRcStation13.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation13.TabIndex = 42;
-            this.btRcStation13.UseVisualStyleBackColor = true;
-            this.btRcStation13.Visible = false;
-            this.btRcStation13.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation14
-            // 
-            this.btRcStation14.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation14.Name = "btRcStation14";
-            this.btRcStation14.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation14.TabIndex = 41;
-            this.btRcStation14.UseVisualStyleBackColor = true;
-            this.btRcStation14.Visible = false;
-            this.btRcStation14.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation15
-            // 
-            this.btRcStation15.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation15.Name = "btRcStation15";
-            this.btRcStation15.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation15.TabIndex = 40;
-            this.btRcStation15.UseVisualStyleBackColor = true;
-            this.btRcStation15.Visible = false;
-            this.btRcStation15.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation8
-            // 
-            this.btRcStation8.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation8.Name = "btRcStation8";
-            this.btRcStation8.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation8.TabIndex = 39;
-            this.btRcStation8.UseVisualStyleBackColor = true;
-            this.btRcStation8.Visible = false;
-            this.btRcStation8.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation7
-            // 
-            this.btRcStation7.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation7.Name = "btRcStation7";
-            this.btRcStation7.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation7.TabIndex = 38;
-            this.btRcStation7.UseVisualStyleBackColor = true;
-            this.btRcStation7.Visible = false;
-            this.btRcStation7.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation6
-            // 
-            this.btRcStation6.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation6.Name = "btRcStation6";
-            this.btRcStation6.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation6.TabIndex = 37;
-            this.btRcStation6.UseVisualStyleBackColor = true;
-            this.btRcStation6.Visible = false;
-            this.btRcStation6.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation5
-            // 
-            this.btRcStation5.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation5.Name = "btRcStation5";
-            this.btRcStation5.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation5.TabIndex = 36;
-            this.btRcStation5.UseVisualStyleBackColor = true;
-            this.btRcStation5.Visible = false;
-            this.btRcStation5.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation4
-            // 
-            this.btRcStation4.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation4.Name = "btRcStation4";
-            this.btRcStation4.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation4.TabIndex = 35;
-            this.btRcStation4.UseVisualStyleBackColor = true;
-            this.btRcStation4.Visible = false;
-            this.btRcStation4.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation3
-            // 
-            this.btRcStation3.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation3.Name = "btRcStation3";
-            this.btRcStation3.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation3.TabIndex = 34;
-            this.btRcStation3.UseVisualStyleBackColor = true;
-            this.btRcStation3.Visible = false;
-            this.btRcStation3.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation2
-            // 
-            this.btRcStation2.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation2.Name = "btRcStation2";
-            this.btRcStation2.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation2.TabIndex = 33;
-            this.btRcStation2.UseVisualStyleBackColor = true;
-            this.btRcStation2.Visible = false;
-            this.btRcStation2.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // btRcStation1
-            // 
-            this.btRcStation1.Location = new System.Drawing.Point(0, 0);
-            this.btRcStation1.Name = "btRcStation1";
-            this.btRcStation1.Size = new System.Drawing.Size(120, 60);
-            this.btRcStation1.TabIndex = 32;
-            this.btRcStation1.UseVisualStyleBackColor = true;
-            this.btRcStation1.Visible = false;
-            this.btRcStation1.Click += new System.EventHandler(this.btRcStation_Click);
-            // 
-            // pbRCRoute
-            // 
-            this.pbRCRoute.Image = ((System.Drawing.Image)(resources.GetObject("pbRCRoute.Image")));
-            this.pbRCRoute.Location = new System.Drawing.Point(174, 0);
-            this.pbRCRoute.Name = "pbRCRoute";
-            this.pbRCRoute.Size = new System.Drawing.Size(1476, 745);
-            this.pbRCRoute.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRCRoute.TabIndex = 1;
-            this.pbRCRoute.TabStop = false;
             // 
             // gbMuRoute
             // 
@@ -3501,6 +2944,563 @@
             this.pbMURoute.TabIndex = 0;
             this.pbMURoute.TabStop = false;
             this.pbMURoute.Visible = false;
+            // 
+            // gbRcRoute
+            // 
+            this.gbRcRoute.Controls.Add(this.panelRC);
+            this.gbRcRoute.Controls.Add(this.panelRCAll);
+            this.gbRcRoute.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gbRcRoute.Location = new System.Drawing.Point(20, 47);
+            this.gbRcRoute.Name = "gbRcRoute";
+            this.gbRcRoute.Size = new System.Drawing.Size(1848, 780);
+            this.gbRcRoute.TabIndex = 122;
+            this.gbRcRoute.TabStop = false;
+            this.gbRcRoute.Text = "RC 통화권";
+            this.gbRcRoute.Visible = false;
+            // 
+            // panelRC
+            // 
+            this.panelRC.Controls.Add(this.button6);
+            this.panelRC.Controls.Add(this.button5);
+            this.panelRC.Controls.Add(this.button4);
+            this.panelRC.Controls.Add(this.button3);
+            this.panelRC.Controls.Add(this.button2);
+            this.panelRC.Controls.Add(this.button1);
+            this.panelRC.Controls.Add(this.btRC24);
+            this.panelRC.Controls.Add(this.btRC23);
+            this.panelRC.Controls.Add(this.btRC22);
+            this.panelRC.Controls.Add(this.btRC21);
+            this.panelRC.Controls.Add(this.btRC20);
+            this.panelRC.Controls.Add(this.btRC19);
+            this.panelRC.Controls.Add(this.btRC18);
+            this.panelRC.Controls.Add(this.btRC17);
+            this.panelRC.Controls.Add(this.btRC16);
+            this.panelRC.Controls.Add(this.btRC1);
+            this.panelRC.Controls.Add(this.btRC2);
+            this.panelRC.Controls.Add(this.btRC3);
+            this.panelRC.Controls.Add(this.btRC4);
+            this.panelRC.Controls.Add(this.btRC5);
+            this.panelRC.Controls.Add(this.btRC6);
+            this.panelRC.Controls.Add(this.btRC7);
+            this.panelRC.Controls.Add(this.btRC8);
+            this.panelRC.Controls.Add(this.btRC9);
+            this.panelRC.Controls.Add(this.btRC10);
+            this.panelRC.Controls.Add(this.btRC11);
+            this.panelRC.Controls.Add(this.btRC12);
+            this.panelRC.Controls.Add(this.btRC13);
+            this.panelRC.Controls.Add(this.btRC14);
+            this.panelRC.Controls.Add(this.btRC15);
+            this.panelRC.Controls.Add(this.pbRC);
+            this.panelRC.Location = new System.Drawing.Point(0, 24);
+            this.panelRC.Name = "panelRC";
+            this.panelRC.Size = new System.Drawing.Size(1836, 721);
+            this.panelRC.TabIndex = 2;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(520, 522);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(135, 70);
+            this.button6.TabIndex = 47;
+            this.button6.Text = "button1";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(836, 571);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(135, 70);
+            this.button5.TabIndex = 46;
+            this.button5.Text = "button1";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1154, 577);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(135, 70);
+            this.button4.TabIndex = 45;
+            this.button4.Text = "button1";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1154, 181);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(135, 70);
+            this.button3.TabIndex = 44;
+            this.button3.Text = "button1";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(836, 185);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 70);
+            this.button2.TabIndex = 43;
+            this.button2.Text = "button1";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(519, 142);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 70);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            // 
+            // btRC24
+            // 
+            this.btRC24.Location = new System.Drawing.Point(0, 0);
+            this.btRC24.Name = "btRC24";
+            this.btRC24.Size = new System.Drawing.Size(135, 70);
+            this.btRC24.TabIndex = 40;
+            this.btRC24.Text = "button1";
+            this.btRC24.UseVisualStyleBackColor = true;
+            this.btRC24.Visible = false;
+            // 
+            // btRC23
+            // 
+            this.btRC23.Location = new System.Drawing.Point(0, 0);
+            this.btRC23.Name = "btRC23";
+            this.btRC23.Size = new System.Drawing.Size(135, 70);
+            this.btRC23.TabIndex = 39;
+            this.btRC23.Text = "button1";
+            this.btRC23.UseVisualStyleBackColor = true;
+            this.btRC23.Visible = false;
+            // 
+            // btRC22
+            // 
+            this.btRC22.Location = new System.Drawing.Point(0, 0);
+            this.btRC22.Name = "btRC22";
+            this.btRC22.Size = new System.Drawing.Size(135, 70);
+            this.btRC22.TabIndex = 38;
+            this.btRC22.Text = "button1";
+            this.btRC22.UseVisualStyleBackColor = true;
+            this.btRC22.Visible = false;
+            // 
+            // btRC21
+            // 
+            this.btRC21.Location = new System.Drawing.Point(0, 0);
+            this.btRC21.Name = "btRC21";
+            this.btRC21.Size = new System.Drawing.Size(135, 70);
+            this.btRC21.TabIndex = 37;
+            this.btRC21.Text = "button1";
+            this.btRC21.UseVisualStyleBackColor = true;
+            this.btRC21.Visible = false;
+            // 
+            // btRC20
+            // 
+            this.btRC20.Location = new System.Drawing.Point(0, 0);
+            this.btRC20.Name = "btRC20";
+            this.btRC20.Size = new System.Drawing.Size(135, 70);
+            this.btRC20.TabIndex = 36;
+            this.btRC20.Text = "button1";
+            this.btRC20.UseVisualStyleBackColor = true;
+            this.btRC20.Visible = false;
+            // 
+            // btRC19
+            // 
+            this.btRC19.Location = new System.Drawing.Point(0, 0);
+            this.btRC19.Name = "btRC19";
+            this.btRC19.Size = new System.Drawing.Size(135, 70);
+            this.btRC19.TabIndex = 35;
+            this.btRC19.Text = "button1";
+            this.btRC19.UseVisualStyleBackColor = true;
+            this.btRC19.Visible = false;
+            // 
+            // btRC18
+            // 
+            this.btRC18.Location = new System.Drawing.Point(0, 0);
+            this.btRC18.Name = "btRC18";
+            this.btRC18.Size = new System.Drawing.Size(135, 70);
+            this.btRC18.TabIndex = 34;
+            this.btRC18.Text = "button1";
+            this.btRC18.UseVisualStyleBackColor = true;
+            this.btRC18.Visible = false;
+            // 
+            // btRC17
+            // 
+            this.btRC17.Location = new System.Drawing.Point(0, 0);
+            this.btRC17.Name = "btRC17";
+            this.btRC17.Size = new System.Drawing.Size(135, 70);
+            this.btRC17.TabIndex = 33;
+            this.btRC17.Text = "button1";
+            this.btRC17.UseVisualStyleBackColor = true;
+            this.btRC17.Visible = false;
+            // 
+            // btRC16
+            // 
+            this.btRC16.Location = new System.Drawing.Point(0, 0);
+            this.btRC16.Name = "btRC16";
+            this.btRC16.Size = new System.Drawing.Size(135, 70);
+            this.btRC16.TabIndex = 32;
+            this.btRC16.Text = "button1";
+            this.btRC16.UseVisualStyleBackColor = true;
+            this.btRC16.Visible = false;
+            // 
+            // btRC1
+            // 
+            this.btRC1.Location = new System.Drawing.Point(0, 0);
+            this.btRC1.Name = "btRC1";
+            this.btRC1.Size = new System.Drawing.Size(135, 70);
+            this.btRC1.TabIndex = 17;
+            this.btRC1.Text = "button1";
+            this.btRC1.UseVisualStyleBackColor = true;
+            this.btRC1.Visible = false;
+            this.btRC1.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC2
+            // 
+            this.btRC2.Location = new System.Drawing.Point(0, 0);
+            this.btRC2.Name = "btRC2";
+            this.btRC2.Size = new System.Drawing.Size(135, 70);
+            this.btRC2.TabIndex = 18;
+            this.btRC2.Text = "button2";
+            this.btRC2.UseVisualStyleBackColor = true;
+            this.btRC2.Visible = false;
+            this.btRC2.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC3
+            // 
+            this.btRC3.Location = new System.Drawing.Point(0, 0);
+            this.btRC3.Name = "btRC3";
+            this.btRC3.Size = new System.Drawing.Size(135, 70);
+            this.btRC3.TabIndex = 19;
+            this.btRC3.Text = "button3";
+            this.btRC3.UseVisualStyleBackColor = true;
+            this.btRC3.Visible = false;
+            this.btRC3.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC4
+            // 
+            this.btRC4.Location = new System.Drawing.Point(0, 0);
+            this.btRC4.Name = "btRC4";
+            this.btRC4.Size = new System.Drawing.Size(135, 70);
+            this.btRC4.TabIndex = 20;
+            this.btRC4.Text = "button4";
+            this.btRC4.UseVisualStyleBackColor = true;
+            this.btRC4.Visible = false;
+            this.btRC4.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC5
+            // 
+            this.btRC5.Location = new System.Drawing.Point(0, 0);
+            this.btRC5.Name = "btRC5";
+            this.btRC5.Size = new System.Drawing.Size(135, 70);
+            this.btRC5.TabIndex = 21;
+            this.btRC5.Text = "button5";
+            this.btRC5.UseVisualStyleBackColor = true;
+            this.btRC5.Visible = false;
+            this.btRC5.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC6
+            // 
+            this.btRC6.Location = new System.Drawing.Point(0, 0);
+            this.btRC6.Name = "btRC6";
+            this.btRC6.Size = new System.Drawing.Size(135, 70);
+            this.btRC6.TabIndex = 23;
+            this.btRC6.Text = "button6";
+            this.btRC6.UseVisualStyleBackColor = true;
+            this.btRC6.Visible = false;
+            this.btRC6.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC7
+            // 
+            this.btRC7.Location = new System.Drawing.Point(0, 0);
+            this.btRC7.Name = "btRC7";
+            this.btRC7.Size = new System.Drawing.Size(135, 70);
+            this.btRC7.TabIndex = 22;
+            this.btRC7.Text = "button7";
+            this.btRC7.UseVisualStyleBackColor = true;
+            this.btRC7.Visible = false;
+            this.btRC7.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC8
+            // 
+            this.btRC8.Location = new System.Drawing.Point(0, 0);
+            this.btRC8.Name = "btRC8";
+            this.btRC8.Size = new System.Drawing.Size(135, 70);
+            this.btRC8.TabIndex = 25;
+            this.btRC8.Text = "button8";
+            this.btRC8.UseVisualStyleBackColor = true;
+            this.btRC8.Visible = false;
+            this.btRC8.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC9
+            // 
+            this.btRC9.Location = new System.Drawing.Point(0, 0);
+            this.btRC9.Name = "btRC9";
+            this.btRC9.Size = new System.Drawing.Size(135, 70);
+            this.btRC9.TabIndex = 24;
+            this.btRC9.Text = "button9";
+            this.btRC9.UseVisualStyleBackColor = true;
+            this.btRC9.Visible = false;
+            this.btRC9.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC10
+            // 
+            this.btRC10.Location = new System.Drawing.Point(0, 0);
+            this.btRC10.Name = "btRC10";
+            this.btRC10.Size = new System.Drawing.Size(135, 70);
+            this.btRC10.TabIndex = 26;
+            this.btRC10.Text = "button10";
+            this.btRC10.UseVisualStyleBackColor = true;
+            this.btRC10.Visible = false;
+            this.btRC10.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC11
+            // 
+            this.btRC11.Location = new System.Drawing.Point(0, 0);
+            this.btRC11.Name = "btRC11";
+            this.btRC11.Size = new System.Drawing.Size(135, 70);
+            this.btRC11.TabIndex = 30;
+            this.btRC11.Text = "button11";
+            this.btRC11.UseVisualStyleBackColor = true;
+            this.btRC11.Visible = false;
+            this.btRC11.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC12
+            // 
+            this.btRC12.Location = new System.Drawing.Point(0, 0);
+            this.btRC12.Name = "btRC12";
+            this.btRC12.Size = new System.Drawing.Size(135, 70);
+            this.btRC12.TabIndex = 29;
+            this.btRC12.Text = "button12";
+            this.btRC12.UseVisualStyleBackColor = true;
+            this.btRC12.Visible = false;
+            this.btRC12.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC13
+            // 
+            this.btRC13.Location = new System.Drawing.Point(0, 0);
+            this.btRC13.Name = "btRC13";
+            this.btRC13.Size = new System.Drawing.Size(135, 70);
+            this.btRC13.TabIndex = 28;
+            this.btRC13.Text = "button13";
+            this.btRC13.UseVisualStyleBackColor = true;
+            this.btRC13.Visible = false;
+            this.btRC13.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC14
+            // 
+            this.btRC14.Location = new System.Drawing.Point(0, 0);
+            this.btRC14.Name = "btRC14";
+            this.btRC14.Size = new System.Drawing.Size(135, 70);
+            this.btRC14.TabIndex = 27;
+            this.btRC14.Text = "button14";
+            this.btRC14.UseVisualStyleBackColor = true;
+            this.btRC14.Visible = false;
+            this.btRC14.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // btRC15
+            // 
+            this.btRC15.Location = new System.Drawing.Point(0, 0);
+            this.btRC15.Name = "btRC15";
+            this.btRC15.Size = new System.Drawing.Size(135, 70);
+            this.btRC15.TabIndex = 31;
+            this.btRC15.Text = "button15";
+            this.btRC15.UseVisualStyleBackColor = true;
+            this.btRC15.Visible = false;
+            this.btRC15.Click += new System.EventHandler(this.btRC_Click);
+            // 
+            // pbRC
+            // 
+            this.pbRC.Location = new System.Drawing.Point(174, 0);
+            this.pbRC.Name = "pbRC";
+            this.pbRC.Size = new System.Drawing.Size(1476, 745);
+            this.pbRC.TabIndex = 41;
+            this.pbRC.TabStop = false;
+            // 
+            // panelRCAll
+            // 
+            this.panelRCAll.Controls.Add(this.btRcStation9);
+            this.panelRCAll.Controls.Add(this.btRcStation10);
+            this.panelRCAll.Controls.Add(this.btRcStation11);
+            this.panelRCAll.Controls.Add(this.btRcStation12);
+            this.panelRCAll.Controls.Add(this.btRcStation13);
+            this.panelRCAll.Controls.Add(this.btRcStation14);
+            this.panelRCAll.Controls.Add(this.btRcStation15);
+            this.panelRCAll.Controls.Add(this.btRcStation8);
+            this.panelRCAll.Controls.Add(this.btRcStation7);
+            this.panelRCAll.Controls.Add(this.btRcStation6);
+            this.panelRCAll.Controls.Add(this.btRcStation5);
+            this.panelRCAll.Controls.Add(this.btRcStation4);
+            this.panelRCAll.Controls.Add(this.btRcStation3);
+            this.panelRCAll.Controls.Add(this.btRcStation2);
+            this.panelRCAll.Controls.Add(this.btRcStation1);
+            this.panelRCAll.Controls.Add(this.pbRCRoute);
+            this.panelRCAll.Location = new System.Drawing.Point(12, 25);
+            this.panelRCAll.Name = "panelRCAll";
+            this.panelRCAll.Size = new System.Drawing.Size(1824, 745);
+            this.panelRCAll.TabIndex = 1;
+            // 
+            // btRcStation9
+            // 
+            this.btRcStation9.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation9.Name = "btRcStation9";
+            this.btRcStation9.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation9.TabIndex = 46;
+            this.btRcStation9.UseVisualStyleBackColor = true;
+            this.btRcStation9.Visible = false;
+            this.btRcStation9.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation10
+            // 
+            this.btRcStation10.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation10.Name = "btRcStation10";
+            this.btRcStation10.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation10.TabIndex = 45;
+            this.btRcStation10.UseVisualStyleBackColor = true;
+            this.btRcStation10.Visible = false;
+            this.btRcStation10.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation11
+            // 
+            this.btRcStation11.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation11.Name = "btRcStation11";
+            this.btRcStation11.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation11.TabIndex = 44;
+            this.btRcStation11.UseVisualStyleBackColor = true;
+            this.btRcStation11.Visible = false;
+            this.btRcStation11.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation12
+            // 
+            this.btRcStation12.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation12.Name = "btRcStation12";
+            this.btRcStation12.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation12.TabIndex = 43;
+            this.btRcStation12.UseVisualStyleBackColor = true;
+            this.btRcStation12.Visible = false;
+            this.btRcStation12.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation13
+            // 
+            this.btRcStation13.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation13.Name = "btRcStation13";
+            this.btRcStation13.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation13.TabIndex = 42;
+            this.btRcStation13.UseVisualStyleBackColor = true;
+            this.btRcStation13.Visible = false;
+            this.btRcStation13.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation14
+            // 
+            this.btRcStation14.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation14.Name = "btRcStation14";
+            this.btRcStation14.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation14.TabIndex = 41;
+            this.btRcStation14.UseVisualStyleBackColor = true;
+            this.btRcStation14.Visible = false;
+            this.btRcStation14.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation15
+            // 
+            this.btRcStation15.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation15.Name = "btRcStation15";
+            this.btRcStation15.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation15.TabIndex = 40;
+            this.btRcStation15.UseVisualStyleBackColor = true;
+            this.btRcStation15.Visible = false;
+            this.btRcStation15.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation8
+            // 
+            this.btRcStation8.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation8.Name = "btRcStation8";
+            this.btRcStation8.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation8.TabIndex = 39;
+            this.btRcStation8.UseVisualStyleBackColor = true;
+            this.btRcStation8.Visible = false;
+            this.btRcStation8.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation7
+            // 
+            this.btRcStation7.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation7.Name = "btRcStation7";
+            this.btRcStation7.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation7.TabIndex = 38;
+            this.btRcStation7.UseVisualStyleBackColor = true;
+            this.btRcStation7.Visible = false;
+            this.btRcStation7.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation6
+            // 
+            this.btRcStation6.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation6.Name = "btRcStation6";
+            this.btRcStation6.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation6.TabIndex = 37;
+            this.btRcStation6.UseVisualStyleBackColor = true;
+            this.btRcStation6.Visible = false;
+            this.btRcStation6.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation5
+            // 
+            this.btRcStation5.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation5.Name = "btRcStation5";
+            this.btRcStation5.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation5.TabIndex = 36;
+            this.btRcStation5.UseVisualStyleBackColor = true;
+            this.btRcStation5.Visible = false;
+            this.btRcStation5.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation4
+            // 
+            this.btRcStation4.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation4.Name = "btRcStation4";
+            this.btRcStation4.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation4.TabIndex = 35;
+            this.btRcStation4.UseVisualStyleBackColor = true;
+            this.btRcStation4.Visible = false;
+            this.btRcStation4.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation3
+            // 
+            this.btRcStation3.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation3.Name = "btRcStation3";
+            this.btRcStation3.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation3.TabIndex = 34;
+            this.btRcStation3.UseVisualStyleBackColor = true;
+            this.btRcStation3.Visible = false;
+            this.btRcStation3.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation2
+            // 
+            this.btRcStation2.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation2.Name = "btRcStation2";
+            this.btRcStation2.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation2.TabIndex = 33;
+            this.btRcStation2.UseVisualStyleBackColor = true;
+            this.btRcStation2.Visible = false;
+            this.btRcStation2.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // btRcStation1
+            // 
+            this.btRcStation1.Location = new System.Drawing.Point(0, 0);
+            this.btRcStation1.Name = "btRcStation1";
+            this.btRcStation1.Size = new System.Drawing.Size(120, 60);
+            this.btRcStation1.TabIndex = 32;
+            this.btRcStation1.UseVisualStyleBackColor = true;
+            this.btRcStation1.Visible = false;
+            this.btRcStation1.Click += new System.EventHandler(this.btRcStation_Click);
+            // 
+            // pbRCRoute
+            // 
+            this.pbRCRoute.Image = ((System.Drawing.Image)(resources.GetObject("pbRCRoute.Image")));
+            this.pbRCRoute.Location = new System.Drawing.Point(174, 0);
+            this.pbRCRoute.Name = "pbRCRoute";
+            this.pbRCRoute.Size = new System.Drawing.Size(1476, 745);
+            this.pbRCRoute.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRCRoute.TabIndex = 1;
+            this.pbRCRoute.TabStop = false;
             // 
             // gbStation
             // 
@@ -11334,6 +11334,15 @@
             // 
             this.saveFileDialog.Filter = "저장 파일(*.csv)|*.csv";
             // 
+            // ucErrorSearch
+            // 
+            this.ucErrorSearch.BackColor = System.Drawing.Color.White;
+            this.ucErrorSearch.Location = new System.Drawing.Point(57, 42);
+            this.ucErrorSearch.Name = "ucErrorSearch";
+            this.ucErrorSearch.Size = new System.Drawing.Size(1774, 781);
+            this.ucErrorSearch.TabIndex = 9;
+            this.ucErrorSearch.searchClick += new NMS.UserControl_Search(this.ucErrorSearch_searchClick);
+            // 
             // MainScreen
             // 
             this.MainScreen.AutoSize = true;
@@ -11382,14 +11391,70 @@
             this.MainMachineSt1.TabIndex = 0;
             this.MainMachineSt1.ClickEvent += new NMS.ButtonClickEvent(this.MainMachineSt_ClickEvent);
             // 
-            // ucErrorSearch
+            // MuUps
             // 
-            this.ucErrorSearch.BackColor = System.Drawing.Color.White;
-            this.ucErrorSearch.Location = new System.Drawing.Point(57, 42);
-            this.ucErrorSearch.Name = "ucErrorSearch";
-            this.ucErrorSearch.Size = new System.Drawing.Size(1774, 781);
-            this.ucErrorSearch.TabIndex = 9;
-            this.ucErrorSearch.searchClick += new NMS.UserControl_Search(this.ucErrorSearch_searchClick);
+            this.MuUps.BackColor = System.Drawing.Color.Transparent;
+            this.MuUps.Location = new System.Drawing.Point(1378, 426);
+            this.MuUps.Name = "MuUps";
+            this.MuUps.Size = new System.Drawing.Size(274, 364);
+            this.MuUps.TabIndex = 230;
+            // 
+            // MuFm
+            // 
+            this.MuFm.BackColor = System.Drawing.Color.Transparent;
+            this.MuFm.Location = new System.Drawing.Point(1084, 610);
+            this.MuFm.Name = "MuFm";
+            this.MuFm.Size = new System.Drawing.Size(274, 180);
+            this.MuFm.TabIndex = 219;
+            // 
+            // MUSt
+            // 
+            this.MUSt.BackColor = System.Drawing.Color.Transparent;
+            this.MUSt.Location = new System.Drawing.Point(0, 0);
+            this.MUSt.Name = "MUSt";
+            this.MUSt.Size = new System.Drawing.Size(1655, 790);
+            this.MUSt.TabIndex = 229;
+            this.MUSt.muControlClick += new NMS.UserControl_Control(this.MUSt_muControlClick);
+            // 
+            // ruSt1_4
+            // 
+            this.ruSt1_4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_4.Location = new System.Drawing.Point(14, 556);
+            this.ruSt1_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_4.Name = "ruSt1_4";
+            this.ruSt1_4.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_4.TabIndex = 42;
+            this.ruSt1_4.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt1_1
+            // 
+            this.ruSt1_1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_1.Location = new System.Drawing.Point(15, 73);
+            this.ruSt1_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_1.Name = "ruSt1_1";
+            this.ruSt1_1.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_1.TabIndex = 21;
+            this.ruSt1_1.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt1_3
+            // 
+            this.ruSt1_3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_3.Location = new System.Drawing.Point(15, 395);
+            this.ruSt1_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_3.Name = "ruSt1_3";
+            this.ruSt1_3.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_3.TabIndex = 41;
+            this.ruSt1_3.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
+            // 
+            // ruSt1_2
+            // 
+            this.ruSt1_2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ruSt1_2.Location = new System.Drawing.Point(15, 234);
+            this.ruSt1_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ruSt1_2.Name = "ruSt1_2";
+            this.ruSt1_2.Size = new System.Drawing.Size(174, 150);
+            this.ruSt1_2.TabIndex = 40;
+            this.ruSt1_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
             // 
             // RuFm
             // 
@@ -11489,71 +11554,6 @@
             this.ruSt2_2.TabIndex = 1;
             this.ruSt2_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
             // 
-            // MuUps
-            // 
-            this.MuUps.BackColor = System.Drawing.Color.Transparent;
-            this.MuUps.Location = new System.Drawing.Point(1378, 426);
-            this.MuUps.Name = "MuUps";
-            this.MuUps.Size = new System.Drawing.Size(274, 364);
-            this.MuUps.TabIndex = 230;
-            // 
-            // MuFm
-            // 
-            this.MuFm.BackColor = System.Drawing.Color.Transparent;
-            this.MuFm.Location = new System.Drawing.Point(1084, 610);
-            this.MuFm.Name = "MuFm";
-            this.MuFm.Size = new System.Drawing.Size(274, 180);
-            this.MuFm.TabIndex = 219;
-            // 
-            // MUSt
-            // 
-            this.MUSt.BackColor = System.Drawing.Color.Transparent;
-            this.MUSt.Location = new System.Drawing.Point(0, 0);
-            this.MUSt.Name = "MUSt";
-            this.MUSt.Size = new System.Drawing.Size(1655, 790);
-            this.MUSt.TabIndex = 229;
-            this.MUSt.muControlClick += new NMS.UserControl_Control(this.MUSt_muControlClick);
-            // 
-            // ruSt1_4
-            // 
-            this.ruSt1_4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_4.Location = new System.Drawing.Point(14, 556);
-            this.ruSt1_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_4.Name = "ruSt1_4";
-            this.ruSt1_4.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_4.TabIndex = 42;
-            this.ruSt1_4.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt1_1
-            // 
-            this.ruSt1_1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_1.Location = new System.Drawing.Point(15, 73);
-            this.ruSt1_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_1.Name = "ruSt1_1";
-            this.ruSt1_1.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_1.TabIndex = 21;
-            this.ruSt1_1.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt1_3
-            // 
-            this.ruSt1_3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_3.Location = new System.Drawing.Point(15, 395);
-            this.ruSt1_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_3.Name = "ruSt1_3";
-            this.ruSt1_3.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_3.TabIndex = 41;
-            this.ruSt1_3.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
-            // ruSt1_2
-            // 
-            this.ruSt1_2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ruSt1_2.Location = new System.Drawing.Point(15, 234);
-            this.ruSt1_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ruSt1_2.Name = "ruSt1_2";
-            this.ruSt1_2.Size = new System.Drawing.Size(174, 150);
-            this.ruSt1_2.TabIndex = 40;
-            this.ruSt1_2.ClickEvent += new NMS.ButtonClickEvent(this.RU_ClickEvent);
-            // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -11598,15 +11598,15 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmMain_MouseDown);
             this.gbFaultInfoAll.ResumeLayout(false);
+            this.gbMuRoute.ResumeLayout(false);
+            this.panelMU.ResumeLayout(false);
+            this.panelMU.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMURoute)).EndInit();
             this.gbRcRoute.ResumeLayout(false);
             this.panelRC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbRC)).EndInit();
             this.panelRCAll.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbRCRoute)).EndInit();
-            this.gbMuRoute.ResumeLayout(false);
-            this.panelMU.ResumeLayout(false);
-            this.panelMU.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMURoute)).EndInit();
             this.gb주장치.ResumeLayout(false);
             this.gbFaultInfoMain.ResumeLayout(false);
             this.panel7.ResumeLayout(false);

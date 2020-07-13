@@ -12680,6 +12680,7 @@ namespace NMS
                     break;
                 }
             }
+
             if (!flagRuExist) muData.optOtherSt[6] = 0;
 
             if (nmsMuStDataChange(muID, muData))

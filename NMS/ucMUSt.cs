@@ -82,6 +82,7 @@ namespace NMS
 
         public ucMUSt()
         {
+
             switch (clsCommon.nmsGUIUser)
             {
                 case "전라선":
@@ -1028,8 +1029,10 @@ namespace NMS
             //각 CPU카드 연결상태(5:MU TRX CPU 장착 상태, 6:MU OPT CPU 장착 상태, 7:UPS 연결 상태) 
             for (i = 5; i < 8; i++)
             {
-                if (muData.optOtherSt[i] == 0) SetImage(pbOptMonSt[i], NMS.Properties.Resources.st_Normal);
-                else SetImage(pbOptMonSt[i], NMS.Properties.Resources.st_Error);
+                if (muData.optOtherSt[i] == 0)
+                    SetImage(pbOptMonSt[i], NMS.Properties.Resources.st_Normal);
+                else
+                    SetImage(pbOptMonSt[i], NMS.Properties.Resources.st_Error);
             }
 
             //OPT의 DC전원값
